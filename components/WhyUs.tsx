@@ -45,13 +45,23 @@ export default function WhyUs() {
       const { ScrollTrigger } = await import('gsap/ScrollTrigger')
       gsap.registerPlugin(ScrollTrigger)
 
-      gsap.from(ref.current?.querySelectorAll('.feature-card') ?? [], {
-        opacity: 0,
+      const cards = ref.current?.querySelectorAll('.feature-card') ?? []
+      const triggerConfig = { trigger: ref.current, start: 'top 75%', once: true }
+
+      // All cards slide up in sync so rows stay horizontally aligned
+      gsap.from(cards, {
         y: 40,
-        duration: 0.6,
-        stagger: 0.15,
+        duration: 0.7,
         ease: 'power2.out',
-        scrollTrigger: { trigger: ref.current, start: 'top 75%', once: true },
+        scrollTrigger: triggerConfig,
+      })
+      // Opacity staggers independently — gives the cascade feel without shifting rows
+      gsap.from(cards, {
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.1,
+        ease: 'power2.out',
+        scrollTrigger: triggerConfig,
       })
 
       cleanup = () => ScrollTrigger.getAll().forEach((t) => t.kill())
