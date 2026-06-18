@@ -2,8 +2,9 @@ import { NextRequest, NextResponse } from 'next/server'
 
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json()
-    const { name, email, company, message } = body as Record<string, string>
+    const text = await req.text()
+    const body = JSON.parse(text) as Record<string, string>
+    const { name, email, company, message } = body
 
     if (!name?.trim() || !email?.trim() || !message?.trim()) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
@@ -67,7 +68,7 @@ export async function POST(req: NextRequest) {
     if (!res.ok) {
       const errText = await res.text()
       console.error('Resend API error:', res.status, errText)
-      return NextResponse.json({ error: 'Failed to send message', detail: errText, status: res.status }, { status: 500 })
+      return NextResponse.json({ error: 'Failed to send message' }, { status: 500 })
     }
 
     return NextResponse.json({ success: true })
