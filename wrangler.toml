@@ -1,0 +1,12 @@
+name = "appaxislab-next"
+compatibility_date = "2025-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+main = ".open-next/worker.js"
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+# Environment variables are set in the Cloudflare Pages dashboard,
+# not in this file — never commit secrets here.

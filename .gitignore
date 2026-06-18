@@ -7,6 +7,9 @@ node_modules/
 .next/
 out/
 
+# Cloudflare / OpenNext build output
+.open-next/
+
 # Environment variables — NEVER commit these
 .env
 .env.local

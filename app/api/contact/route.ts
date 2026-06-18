@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-import nodemailer from 'nodemailer'
 
 export async function POST(req: NextRequest) {
   try {
@@ -15,15 +14,11 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Invalid email address' }, { status: 400 })
     }
 
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT ?? 587),
-      secure: process.env.SMTP_SECURE === 'true',
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-    })
+    const resendKey = process.env.RESEND_API_KEY
+    if (!resendKey) {
+      console.error('RESEND_API_KEY is not set')
+      return NextResponse.json({ error: 'Email service not configured' }, { status: 500 })
+    }
 
     const htmlBody = `
       <table width="100%" cellpadding="0" cellspacing="0" style="font-family:Arial,sans-serif;background:#0d0d0d;padding:32px">
@@ -51,13 +46,29 @@ export async function POST(req: NextRequest) {
       </table>
     `
 
-    await transporter.sendMail({
-      from: `"${process.env.SMTP_FROM_NAME ?? 'AppAxisLab'}" <${process.env.SMTP_FROM ?? process.env.SMTP_USER}>`,
-      to: process.env.SMTP_TO ?? process.env.SMTP_USER,
-      replyTo: email,
-      subject: `New enquiry from ${name}`,
-      html: htmlBody,
+    const fromAddress = process.env.RESEND_FROM ?? 'AppAxisLab <onboarding@resend.dev>'
+    const toAddress = process.env.RESEND_TO ?? 'taimoor@boltechsolutions.com'
+
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${resendKey}`,
+      },
+      body: JSON.stringify({
+        from: fromAddress,
+        to: [toAddress],
+        reply_to: email,
+        subject: `New enquiry from ${name}`,
+        html: htmlBody,
+      }),
     })
+
+    if (!res.ok) {
+      const errText = await res.text()
+      console.error('Resend API error:', res.status, errText)
+      return NextResponse.json({ error: 'Failed to send message' }, { status: 500 })
+    }
 
     return NextResponse.json({ success: true })
   } catch (err) {
