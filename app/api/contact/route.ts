@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
     if (!res.ok) {
       const errText = await res.text()
       console.error('Resend API error:', res.status, errText)
-      return NextResponse.json({ error: 'Failed to send message' }, { status: 500 })
+      return NextResponse.json({ error: 'Failed to send message', detail: errText, status: res.status }, { status: 500 })
     }
 
     return NextResponse.json({ success: true })
