@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — AxisFlow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #FDFAF6;
+            --color-surface: #FFFFFF;
+            --color-text: #1A1A1A;
+            --color-text-secondary: #5C5C5C;
+            --color-accent: #C2185B;
+            --color-accent-soft: #FCE4EC;
+            --color-border: #E8E2DA;
+            --color-highlight: #FFF3E0;
+            --color-warning-bg: #FFF8E1;
+            --color-warning-border: #F9A825;
+            --font-display: 'Fraunces', serif;
+            --font-body: 'DM Sans', sans-serif;
+            --max-width: 720px;
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2.5rem;
+            --space-xl: 4rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg: #1A1215;
+                --color-surface: #241A1E;
+                --color-text: #F0E8EB;
+                --color-text-secondary: #A89BA0;
+                --color-accent: #F06292;
+                --color-accent-soft: #3D1A2A;
+                --color-border: #3A2A30;
+                --color-highlight: #2E2218;
+                --color-warning-bg: #2E2518;
+                --color-warning-border: #C7930F;
+            }
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-weight: 400;
+            line-height: 1.75;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ─── HEADER ─── */
+        .site-header {
+            padding: var(--space-md) var(--space-md);
+            border-bottom: 1px solid var(--color-border);
+            background: var(--color-surface);
+        }
+
+        .site-header__inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .site-header__brand {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            text-decoration: none;
+            color: var(--color-text);
+        }
+
+        .site-header__icon {
+            width: 32px;
+            height: 32px;
+            background: var(--color-accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .site-header__name {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.15rem;
+            letter-spacing: -0.01em;
+        }
+
+        .site-header__back {
+            font-size: 0.85rem;
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .site-header__back:hover {
+            text-decoration: underline;
+        }
+
+        /* ─── HERO ─── */
+        .hero {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: var(--space-xl) var(--space-md) var(--space-lg);
+        }
+
+        .hero__label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-accent);
+            background: var(--color-accent-soft);
+            padding: 0.25rem 0.75rem;
+            border-radius: 100px;
+            margin-bottom: var(--space-sm);
+        }
+
+        .hero h1 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            color: var(--color-text);
+            margin-bottom: var(--space-xs);
+        }
+
+        .hero__meta {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+        }
+
+        /* ─── TABLE OF CONTENTS ─── */
+        .toc {
+            max-width: var(--max-width);
+            margin: 0 auto var(--space-lg);
+            padding: 0 var(--space-md);
+        }
+
+        .toc__box {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: var(--space-md);
+        }
+
+        .toc__title {
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: var(--space-sm);
+            color: var(--color-text);
+        }
+
+        .toc__list {
+            list-style: none;
+            columns: 2;
+            column-gap: var(--space-lg);
+        }
+
+        @media (max-width: 600px) {
+            .toc__list { columns: 1; }
+        }
+
+        .toc__list li {
+            break-inside: avoid;
+            margin-bottom: 0.4rem;
+        }
+
+        .toc__list a {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: opacity 0.15s;
+        }
+
+        .toc__list a:hover {
+            text-decoration: underline;
+        }
+
+        /* ─── CONTENT ─── */
+        .content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--space-md) var(--space-xl);
+        }
+
+        .content section {
+            margin-bottom: var(--space-lg);
+        }
+
+        .content h2 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.35rem;
+            letter-spacing: -0.01em;
+            color: var(--color-text);
+            margin-bottom: var(--space-sm);
+            padding-top: var(--space-md);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .content h2:first-child {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .content h3 {
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--color-text);
+            margin-top: var(--space-md);
+            margin-bottom: var(--space-xs);
+        }
+
+        .content p {
+            margin-bottom: var(--space-sm);
+            color: var(--color-text-secondary);
+        }
+
+        .content strong {
+            color: var(--color-text);
+            font-weight: 600;
+        }
+
+        .content a {
+            color: var(--color-accent);
+            font-weight: 500;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.2em;
+            text-decoration-color: color-mix(in srgb, var(--color-accent) 45%, transparent);
+        }
+
+        .content a:hover {
+            text-decoration-color: var(--color-accent);
+            text-decoration-thickness: 2px;
+        }
+
+        .content a:visited {
+            color: var(--color-accent);
+        }
+
+        .content ul {
+            list-style: none;
+            margin-bottom: var(--space-sm);
+            padding-left: 0;
+        }
+
+        .content ul li {
+            position: relative;
+            padding-left: 1.4rem;
+            margin-bottom: 0.35rem;
+            color: var(--color-text-secondary);
+        }
+
+        .content ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.65rem;
+            width: 6px;
+            height: 6px;
+            background: var(--color-accent);
+            border-radius: 50%;
+        }
+
+        /* Callout box */
+        .callout {
+            background: var(--color-highlight);
+            border-left: 3px solid var(--color-accent);
+            border-radius: 0 8px 8px 0;
+            padding: var(--space-sm) var(--space-md);
+            margin: var(--space-md) 0;
+        }
+
+        .callout p {
+            color: var(--color-text);
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Warning callout */
+        .callout--warning {
+            background: var(--color-warning-bg);
+            border-left-color: var(--color-warning-border);
+        }
+
+        /* Table */
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--space-sm) 0 var(--space-md);
+            font-size: 0.9rem;
+        }
+
+        .content th, .content td {
+            text-align: left;
+            padding: 0.6rem 0.8rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .content th {
+            font-weight: 600;
+            color: var(--color-text);
+            background: var(--color-surface);
+        }
+
+        .content td {
+            color: var(--color-text-secondary);
+        }
+
+        /* ─── FOOTER ─── */
+        .site-footer {
+            border-top: 1px solid var(--color-border);
+            padding: var(--space-lg) var(--space-md);
+            text-align: center;
+        }
+
+        .site-footer p {
+            font-size: 0.8rem;
+            color: var(--color-text-secondary);
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        /* ─── PRINT ─── */
+        @media print {
+            body { background: white; color: black; font-size: 11pt; }
+            .site-header, .toc, .site-footer { display: none; }
+            .content { max-width: 100%; padding: 0; }
+            .content h2 { border-top: 1px solid #ccc; }
+            .callout { border-left-color: #333; background: #f5f5f5; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="/" class="site-header__brand">
+                <span class="site-header__icon">🩸</span>
+                <span class="site-header__name">AxisFlow Period Tracker</span>
+            </a>
+            <a href="index.html" class="site-header__back">&larr; Back to home</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+        <span class="hero__label">Legal</span>
+        <h1>Privacy Policy</h1>
+        <p class="hero__meta">Last updated: May 06, 2026 &middot; Version 2.1</p>
+    </div>
+
+    <!-- TABLE OF CONTENTS -->
+    <nav class="toc" aria-label="Table of contents">
+        <div class="toc__box">
+            <p class="toc__title">Contents</p>
+            <ol class="toc__list">
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#data-we-process">Data We Process</a></li>
+                <li><a href="#where-your-data-lives">Where Your Data Lives</a></li>
+                <li><a href="#advertising">Advertising</a></li>
+                <li><a href="#product-analytics-firebase">Product Analytics (Firebase)</a></li>
+                <li><a href="#data-sharing">Data Sharing with Third Parties</a></li>
+                <li><a href="#subscription-data">Subscription Data</a></li>
+                <li><a href="#cloud-backup">Cloud Backup</a></li>
+                <li><a href="#your-rights">Your Rights</a></li>
+                <li><a href="#childrens-privacy">Children's Privacy</a></li>
+                <li><a href="#law-enforcement">Law Enforcement</a></li>
+                <li><a href="#changes">Changes to This Policy</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <!-- 1. Introduction -->
+        <section id="introduction">
+            <h2>1. Introduction</h2>
+            <p><strong>AxisFlow</strong> ("the App") is a menstrual cycle and ovulation tracking application developed by App Axis Lab ("we," "us," or "our"). Your privacy matters to us, and this policy explains in plain language what data the App handles, how we handle it, and what rights you have.</p>
+            <p>The App is designed so that <strong>your health data is stored on your device and encrypted</strong>. We do not operate backend servers that store your health information. However, the App does display advertisements provided by third-party ad networks, which involves certain data collection as described in <a href="#advertising">Section 4</a> below. We also use Firebase for anonymized product analytics to understand general usage patterns, as described in <a href="#product-analytics-firebase">Section 5</a>.</p>
+
+            <div class="callout">
+                <p><strong>The short version:</strong> Your health data (cycles, symptoms, BBT, mood) stays on your phone, encrypted. We never see it. We display ads on the free tier via mediation partners listed in this policy, and we use Firebase for generic usage analytics &mdash; neither receives your health logs. Premium subscribers enjoy an ad-free experience.</p>
+            </div>
+        </section>
+
+        <!-- 2. Data We Process -->
+        <section id="data-we-process">
+            <h2>2. Data We Process</h2>
+
+            <h3>Health data you enter</h3>
+            <p>The App processes the following health-related data that you voluntarily enter:</p>
+            <ul>
+                <li>Menstrual cycle dates (period start and end dates)</li>
+                <li>Flow intensity</li>
+                <li>Symptoms and their severity</li>
+                <li>Mood</li>
+                <li>Basal body temperature (BBT) readings</li>
+                <li>Cervical mucus observations</li>
+                <li>Sexual activity</li>
+                <li>Pill reminder status (taken, skipped, missed)</li>
+            </ul>
+            <p>This health data is stored <strong>exclusively on your device</strong> and is never transmitted to our servers or to any advertising partner.</p>
+
+            <h3>Profile preferences</h3>
+            <ul>
+                <li>Birth year (for age verification only &mdash; not your full date of birth)</li>
+                <li>Cycle and period length defaults</li>
+                <li>Temperature unit preference (&deg;F / &deg;C)</li>
+                <li>Goal mode (tracking, conceiving, or fertility awareness)</li>
+            </ul>
+
+            <h3>Data collected by advertising SDKs</h3>
+            <p>When ads are displayed, the third-party ad networks integrated into the App may automatically collect certain device and usage information. This data is collected <strong>by the ad network directly</strong>, not by us. See <a href="#advertising">Section 4 (Advertising)</a> for full details.</p>
+
+            <h3>Product analytics (Firebase)</h3>
+            <p>We use <strong>Google Firebase</strong> to collect <strong>non-health</strong> app events (for example screen views and generic navigation flows) so we can understand the user journey and improve the App. Events are not used to reconstruct your cycle, symptoms, or any health entries. See <a href="#product-analytics-firebase">Section 5 (Product Analytics)</a> for full details.</p>
+
+            <h3>What we do NOT collect</h3>
+            <p>We do <strong>not</strong> collect your name, email address, phone number, physical address, or precise geographic location. We do <strong>not</strong> transmit your health data (cycle dates, symptoms, BBT readings, mood, or any other health entries) to any server, ad network, analytics SDK, or other third party.</p>
+        </section>
+
+        <!-- 3. Where Your Data Lives -->
+        <section id="where-your-data-lives">
+            <h2>3. Where Your Data Lives</h2>
+            <p><strong>All health data is stored exclusively on your device.</strong> It is encrypted at rest using AES-256 encryption (via SQLCipher). The encryption key is stored in your device's secure hardware (iOS Keychain / Android Keystore) and is protected by your biometric authentication or device passcode.</p>
+            <p>We operate <strong>no backend servers</strong> that store your health data. We maintain <strong>no database</strong> of user health information.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Scenario</th>
+                        <th>Data leaves device?</th>
+                        <th>What data?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Normal app usage (health data)</td>
+                        <td>No</td>
+                        <td>Encrypted at rest on device (AES-256)</td>
+                    </tr>
+                    <tr>
+                        <td>Ads displayed (free tier)</td>
+                        <td>Yes &mdash; by the ad SDK</td>
+                        <td>Device identifiers, ad interaction data (see Section 4). <strong>No health data is shared.</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Product analytics (Firebase)</td>
+                        <td>Yes &mdash; to Google per Firebase terms</td>
+                        <td>Aggregated usage and event data only (see Section 5). <strong>No health data is sent.</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Cloud backup (optional, paid)</td>
+                        <td>Yes &mdash; to your own cloud storage</td>
+                        <td>AES-256 encrypted before upload; we never hold the key</td>
+                    </tr>
+                    <tr>
+                        <td>Data export (JSON/CSV)</td>
+                        <td>Only if you share it</td>
+                        <td>Your responsibility after export</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 4. Advertising -->
+        <section id="advertising">
+            <h2>4. Advertising</h2>
+
+            <p>AxisFlow displays advertisements in the <strong>free tier</strong> of the App to support ongoing development. <strong>Premium subscribers do not see any ads.</strong></p>
+
+            <h3>Ad networks we use</h3>
+            <p>The free tier shows ads through <strong>Google AdMob mediation</strong> and partner networks. Depending on your region, device, and inventory, ads may be served by one or more of the following (each operates its own SDK or receives bid requests through mediation):</p>
+            <ul>
+                <li><strong>Google AdMob</strong> (Google LLC) &mdash; <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+                <li><strong>Pangle</strong> (ByteDance Pte. Ltd.) &mdash; <a href="https://www.pangleglobal.com/privacy" target="_blank" rel="noopener">Pangle Privacy</a></li>
+                <li><strong>Yandex Advertising Network</strong> (Yandex) &mdash; <a href="https://yandex.com/legal/confidential/" target="_blank" rel="noopener">Yandex Privacy Policy</a></li>
+                <li><strong>Meta Audience Network</strong> (Meta Platforms, Inc.) &mdash; <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta Privacy Policy</a></li>
+                <li><strong>Liftoff Monetize</strong> (Liftoff / Vungle) &mdash; <a href="https://liftoff.io/privacy-policy/" target="_blank" rel="noopener">Liftoff Privacy Policy</a></li>
+                <li><strong>Mintegral</strong> (Mintegral International Limited) &mdash; <a href="https://www.mintegral.com/en/privacy/" target="_blank" rel="noopener">Mintegral Privacy Policy</a></li>
+                <li><strong>AppLovin</strong> (AppLovin Corporation) &mdash; <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">AppLovin Privacy Policy</a></li>
+            </ul>
+            <p>We may add, remove, or replace mediation partners from time to time. When we do, this list and the summary in <a href="#data-sharing">Section 6</a> will be updated, and we will notify you via an in-app notice when the change is material.</p>
+
+            <h3>What ad networks collect</h3>
+            <p>When an ad is displayed, the ad SDK may automatically collect the following data <strong>from your device</strong>:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data type</th>
+                        <th>Examples</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Device identifiers</td>
+                        <td>Advertising ID (IDFA on iOS, GAID on Android), device model, OS version</td>
+                        <td>Ad delivery, frequency capping, fraud prevention</td>
+                    </tr>
+                    <tr>
+                        <td>Network information</td>
+                        <td>IP address (coarsely geolocated to city/region level by the ad network), connection type (Wi-Fi/cellular)</td>
+                        <td>Ad delivery, regional ad targeting</td>
+                    </tr>
+                    <tr>
+                        <td>Ad interaction data</td>
+                        <td>Whether an ad was viewed, tapped, or dismissed; ad display timestamps</td>
+                        <td>Ad performance measurement, billing</td>
+                    </tr>
+                    <tr>
+                        <td>App context (limited)</td>
+                        <td>App bundle identifier, app version</td>
+                        <td>Ad delivery targeting by app category</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="callout callout--warning">
+                <p><strong>What we do NOT share with ad networks:</strong> We never transmit your health data (cycle dates, period status, symptoms, BBT readings, mood, cervical mucus observations, sexual activity, pill logs, or any other health entries) to any ad network. The ad SDK does not have access to the App's encrypted health database. Ads are not targeted based on your cycle, fertility status, or any health information.</p>
+            </div>
+
+            <h3>Personalized vs. non-personalized ads</h3>
+            <p>Depending on your device settings and consent choices:</p>
+            <ul>
+                <li><strong>Personalized ads:</strong> If you have not opted out of ad personalization on your device, the ad network may use your advertising ID and browsing/app usage history (collected across other apps by the ad network) to show ads relevant to your general interests. This does NOT involve your health data from AxisFlow.</li>
+                <li><strong>Non-personalized ads:</strong> If you have opted out of ad personalization (via your device settings or the consent dialog), the ad network will show contextual or non-targeted ads. The ad network may still collect device identifiers for fraud prevention and frequency capping.</li>
+            </ul>
+
+            <h3>Your ad choices</h3>
+            <ul>
+                <li><strong>iOS:</strong> When you first use the App, you will see Apple's App Tracking Transparency (ATT) prompt asking whether AxisFlow can track your activity across other companies' apps and websites. If you choose "Ask App Not to Track," only non-personalized ads will be shown.</li>
+                <li><strong>Android:</strong> You can opt out of ad personalization via <strong>Settings &rarr; Google &rarr; Ads &rarr; Opt out of Ads Personalization</strong> on your device.</li>
+                <li><strong>Remove ads entirely:</strong> Subscribe to <strong>AxisFlow Premium</strong>. Premium subscribers see zero ads, and the ad SDKs are not activated for premium users.</li>
+            </ul>
+
+            <h3>Ad placement</h3>
+            <p>Ads are placed in non-intrusive locations within the App. Ads are <strong>never</strong> shown:</p>
+            <ul>
+                <li>During period logging or symptom entry</li>
+                <li>On the PIN/biometric lock screen</li>
+                <li>During onboarding</li>
+                <li>As fullscreen interstitials that block core functionality</li>
+                <li>In push notifications</li>
+            </ul>
+
+            <h3>Children and ads</h3>
+            <p>If the App detects that the user may be under 18 (based on the birth year provided during onboarding), the App requests child-directed ad treatment from the ad network, which disables personalized advertising and limits data collection in compliance with COPPA and applicable laws.</p>
+        </section>
+
+        <!-- 5. Product Analytics (Firebase) -->
+        <section id="product-analytics-firebase">
+            <h2>5. Product Analytics (Firebase)</h2>
+            <p>We use <strong>Google Firebase</strong> (including Firebase Analytics and related Firebase SDK features) to collect <strong>product analytics events</strong>. These events help us understand how people navigate the App &mdash; for example which screens are opened and basic funnel steps &mdash; so we can fix bugs, prioritize improvements, and measure stability.</p>
+
+            <h3>What we send (and what we do not)</h3>
+            <p>We configure analytics so that events reflect <strong>generic app usage only</strong>. We do <strong>not</strong> include any of your health entries in Firebase events: no cycle dates, period logs, symptoms, BBT readings, mood, cervical mucus or sexual activity logs, pill reminders, notes, or similar wellness data. That information stays in your on-device encrypted database and is <strong>not</strong> transmitted to Firebase for analytics.</p>
+            <p>We do <strong>not</strong> intentionally send your name, email address, phone number, or account credentials to Firebase as part of this analytics setup.</p>
+
+            <h3>What Google / Firebase may still process</h3>
+            <p>Like most analytics SDKs, Firebase relies on Google’s infrastructure. Under Google’s and Firebase’s own policies and documentation, Google may process certain <strong>technical identifiers and diagnostics</strong> tied to the app installation or device (for example app instance identifiers, device model, OS version, locale, crash logs, and IP-related signals used for delivery and fraud prevention). Those practices are governed by Google &mdash; not stored by us on our own servers as health data. For details, see:</p>
+            <ul>
+                <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Information</a></li>
+                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+            </ul>
+
+            <div class="callout">
+                <p><strong>Summary:</strong> Firebase tells us <em>how the App is used in general</em>, not <em>what health information you logged</em>. Removing ads via Premium is described in <a href="#subscription-data">Section 7</a>; it does not change how on-device health encryption works.</p>
+            </div>
+        </section>
+
+        <!-- 6. Data Sharing with Third Parties -->
+        <section id="data-sharing">
+            <h2>6. Data Sharing with Third Parties</h2>
+            <p>The following table summarizes all third-party services that may receive data from or through the App:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Third party</th>
+                        <th>Data received</th>
+                        <th>Purpose</th>
+                        <th>Receives health data?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Ad mediation partners</strong> (may include Google AdMob, Pangle, Yandex, Meta Audience Network, Liftoff, Mintegral, AppLovin &mdash; see <a href="#advertising">Section 4</a>)</td>
+                        <td>Device identifiers, IP address (coarse), ad interactions, limited app context</td>
+                        <td>Serving and measuring ads on the free tier</td>
+                        <td><strong>No</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Firebase</strong></td>
+                        <td>Usage and diagnostic events; technical identifiers per Google’s policies (see <a href="#product-analytics-firebase">Section 5</a>)</td>
+                        <td>Product analytics, quality, and stability</td>
+                        <td><strong>No</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>RevenueCat</strong></td>
+                        <td>Pseudonymous user ID, subscription transaction events</td>
+                        <td>Subscription management</td>
+                        <td><strong>No</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Apple / Google</strong></td>
+                        <td>Purchase receipts (handled by the platform)</td>
+                        <td>Payment processing</td>
+                        <td><strong>No</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>We do not sell your personal information.</strong> The data shared with ad networks is for the sole purpose of displaying advertisements and is governed by each ad network's own privacy policy.</p>
+
+            <p>We do not share, sell, rent, or trade your health data with any third party for any purpose, including advertising.</p>
+        </section>
+
+        <!-- 7. Subscription Data -->
+        <section id="subscription-data">
+            <h2>7. Subscription Data</h2>
+            <p>If you subscribe to AxisFlow Premium, your payment is processed entirely by <strong>Apple</strong> (via the App Store) or <strong>Google</strong> (via Google Play). We never see your payment details (credit card number, billing address, etc.).</p>
+            <p>Subscription status is managed by <strong>RevenueCat, Inc.</strong>, a third-party service that receives anonymous transaction data from Apple and Google. RevenueCat assigns a pseudonymous identifier (not linked to your identity) to track your subscription status. RevenueCat does <strong>not</strong> receive any health data from the App.</p>
+            <p>For RevenueCat's privacy practices, see <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.</p>
+
+            <div class="callout">
+                <p><strong>Premium benefit:</strong> AxisFlow Premium subscribers enjoy a completely ad-free experience. When Premium is active, the ad SDK is not initialized, and no ad-related data collection occurs.</p>
+            </div>
+        </section>
+
+        <!-- 8. Cloud Backup -->
+        <section id="cloud-backup">
+            <h2>8. Cloud Backup (Optional, Paid Feature)</h2>
+            <p>If you choose to use the Cloud Backup feature:</p>
+            <ul>
+                <li>Your data is encrypted <strong>on your device</strong> using a password you set, <strong>before</strong> it leaves your device.</li>
+                <li>The encrypted backup is stored in <strong>your own cloud storage account</strong> (Google Drive, iCloud, OneDrive, Dropbox, or Box).</li>
+                <li>We never possess the encryption key and <strong>cannot decrypt your backup</strong>.</li>
+                <li>A recovery code generated during setup allows you to restore your data on a new device. <strong>If you lose both your device and your recovery code, your data is unrecoverable.</strong> We cannot help in this scenario &mdash; this is the privacy tradeoff.</li>
+            </ul>
+
+            <div class="callout">
+                <p><strong>Important:</strong> We do not operate the cloud storage. Your backup lives in your personal Google Drive, iCloud, OneDrive, Dropbox, or Box account. We have no access to it.</p>
+            </div>
+        </section>
+
+        <!-- 9. Your Rights -->
+        <section id="your-rights">
+            <h2>9. Your Rights</h2>
+            <p>Regardless of where you live, you have the following rights:</p>
+
+            <h3>Delete your health data</h3>
+            <p>You can delete <strong>all</strong> your health data at any time from <strong>Settings &rarr; Data Management &rarr; Delete All Data</strong>. This action is irreversible and immediate. All health data, preferences, and logs are permanently erased from your device.</p>
+
+            <h3>Export your data</h3>
+            <p>You can export your data in JSON or CSV format at any time from <strong>Settings &rarr; Data Management &rarr; Export Data</strong>.</p>
+
+            <h3>Control ad personalization</h3>
+            <p>You can opt out of personalized ads via your device settings (see <a href="#advertising">Section 4</a>), or remove ads entirely by subscribing to Premium.</p>
+
+            <h3>Reset your advertising identifier</h3>
+            <p>You can reset your device's advertising ID at any time through your device settings. This breaks the link between your past ad interactions and future ones.</p>
+
+            <h3>Access your data</h3>
+            <p>All your health data is visible to you within the App at all times. There is no hidden data collection of health information.</p>
+
+            <h3>For EU/EEA residents (GDPR)</h3>
+            <p>You have additional rights under the General Data Protection Regulation, including the right to data portability, the right to erasure, and the right to object to processing. The App supports data portability and erasure via the Export and Delete features described above.</p>
+            <p>Regarding advertising: a consent dialog will be presented before any personalized ads are shown, in compliance with the GDPR and the ePrivacy Directive. You may withdraw consent at any time via your device settings or through the consent management interface within the App.</p>
+
+            <h3>For California residents (CCPA/CPRA)</h3>
+            <p>We do not sell your personal information. The sharing of device identifiers with ad networks for the purpose of displaying ads may constitute "sharing" under the CPRA. You have the right to opt out of this sharing by declining ad personalization on your device or by subscribing to Premium.</p>
+        </section>
+
+        <!-- 10. Children's Privacy -->
+        <section id="childrens-privacy">
+            <h2>10. Children's Privacy</h2>
+            <p>The App is not intended for children under 13 (or under 16 in jurisdictions where GDPR applies). Age verification is performed during the App's onboarding process. We do not knowingly collect data from children below these ages.</p>
+            <p>If the App detects the user may be a minor (under 18), child-directed ad treatment is enabled, which disables ad personalization and limits the data that ad networks can collect, in compliance with COPPA.</p>
+        </section>
+
+        <!-- 11. Law Enforcement -->
+        <section id="law-enforcement">
+            <h2>11. Law Enforcement Requests</h2>
+            <p>Because we do not operate servers or databases containing user health data, <strong>we have no health data to provide</strong> in response to subpoenas, court orders, or government requests.</p>
+            <p>Cloud backups are encrypted with user-held keys. We do not possess decryption keys and cannot comply with requests to decrypt backup data.</p>
+            <p>Ad networks and analytics providers (such as Google Firebase) may independently receive and respond to legal requests for data they have collected. Refer to each provider’s privacy policy for details.</p>
+        </section>
+
+        <!-- 12. Changes -->
+        <section id="changes">
+            <h2>12. Changes to This Policy</h2>
+            <p>If we make material changes to this policy &mdash; including adding new ad networks or changing data sharing practices &mdash; we will update this policy with the changes take effect.</p>
+            <p>Non-material changes (formatting, clarification, typo fixes) may be made without notification.</p>
+        </section>
+
+        <!-- 13. Contact -->
+        <section id="contact">
+            <h2>13. Contact Us</h2>
+            <p>If you have questions about this privacy policy, our data practices, or advertising in the App, contact us at:</p>
+            <ul>
+                <li><strong>Email:</strong> support@appaxislab.com</li>
+                <li><strong>Company:</strong> App Axis Lab</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>&copy; 2026 App Axis Lab. All rights reserved. AxisFlow is a wellness and logging tool, not a medical device.</p>
+    </footer>
+
+</body>
+</html>

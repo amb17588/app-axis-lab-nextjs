@@ -1,4 +1,4 @@
-name = "appaxislab-next"
+name = "appaxislab"
 compatibility_date = "2025-04-01"
 compatibility_flags = ["nodejs_compat"]
 
@@ -8,5 +8,6 @@ main = ".open-next/worker.js"
 directory = ".open-next/assets"
 binding = "ASSETS"
 
-# Environment variables are set in the Cloudflare Pages dashboard,
-# not in this file — never commit secrets here.
+# Secrets (RESEND_API_KEY, RESEND_FROM, RESEND_TO) are set in the Cloudflare
+# dashboard under Workers & Pages → appaxislab-next → Settings → Variables & Secrets.
+# Never put secret values in this file.
