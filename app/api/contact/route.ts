@@ -17,8 +17,10 @@ export async function POST(req: NextRequest) {
     try {
       body = JSON.parse(text) as Record<string, string>
     } catch {
-      console.error('[contact] JSON.parse failed — raw body:', JSON.stringify(text.slice(0, 200)))
-      return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 })
+      return NextResponse.json({
+        error: 'Invalid JSON body',
+        _debug: { received: text.slice(0, 300), length: text.length },
+      }, { status: 400 })
     }
 
     const { name, email, company, message } = body
