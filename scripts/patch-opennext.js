@@ -32,15 +32,16 @@ const OLD = `        Object.defineProperty(init2, "body", {
         });`
 
 const NEW = `        let _body = init2.body;
-        // CF Workers does not recognise a Node.js Buffer as a valid BodyInit —
-        // it coerces it via Object.prototype.toString(), producing "[object Object]".
-        // Detect Buffers with Buffer.isBuffer() and copy the bytes into a native
-        // Uint8Array, which CF Workers always accepts as a BodyInit.
+        // CF Workers does not recognise a Node.js Buffer as a valid BodyInit.
+        // Buffer.isBuffer() is unreliable across module realms in CF Workers, so
+        // detect Buffers via the duck-type check readUInt8 (a Buffer-only prototype
+        // method) and copy the bytes into a native Uint8Array that CF Workers accepts.
         if (_body instanceof stream.Readable) {
           _body = ReadableStream.from(_body);
         } else if (
-          typeof Buffer !== "undefined" &&
-          Buffer.isBuffer(_body)
+          _body != null &&
+          typeof _body === "object" &&
+          typeof _body.readUInt8 === "function"
         ) {
           const len = _body.length;
           const bytes = new Uint8Array(len);
@@ -56,7 +57,7 @@ const NEW = `        let _body = init2.body;
         });`
 
 if (!original.includes(OLD)) {
-  if (original.includes('Buffer.isBuffer')) {
+  if (original.includes('readUInt8')) {
     console.log('[patch-opennext] init.js already patched — skipping.')
   } else {
     console.warn('[patch-opennext] Patch target not found in init.js — the OpenNext version may have changed. Manual review needed.')
