@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { getCloudflareContext } from '@opennextjs/cloudflare'
 
 function escapeHtml(str: string): string {
   return str
@@ -12,14 +11,12 @@ function escapeHtml(str: string): string {
 
 export async function POST(req: NextRequest) {
   try {
-    // Read from the original CF Workers request body stashed before OpenNext
-    // middleware processes it (see scripts/patch-opennext.js Patch 3).
-    // Falls back to req.text() in non-CF environments (local Next.js dev).
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const cfCtx = getCloudflareContext() as any
-    const text: string = typeof cfCtx?._bodyText === 'string'
-      ? cfCtx._bodyText
-      : await req.text()
+    // Read from the original CF Workers body stashed before OpenNext middleware
+    // corrupts it (patch-opennext.js Patch 3 stores it in the CF ALS context).
+    // Falls back to req.text() in local Next.js dev (no CF context).
+    const cfCtx = (globalThis as Record<symbol, unknown>)[Symbol.for('__cloudflare-context__')] as
+      { _bodyText?: string } | undefined
+    const text = typeof cfCtx?._bodyText === 'string' ? cfCtx._bodyText : await req.text()
 
     let body: Record<string, string>
     try {
