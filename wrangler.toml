@@ -4,6 +4,9 @@ compatibility_flags = ["nodejs_compat"]
 
 main = ".open-next/worker.js"
 
+[build]
+command = "npm run build:cf"
+
 [assets]
 directory = ".open-next/assets"
 binding = "ASSETS"

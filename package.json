@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:cf": "opennextjs-cloudflare build && node scripts/patch-opennext.js",
-    "preview": "opennextjs-cloudflare build && node scripts/patch-opennext.js && wrangler dev",
+    "postinstall": "node scripts/patch-source.js",
+    "build:cf": "node scripts/patch-source.js && opennextjs-cloudflare build && node scripts/patch-opennext.js",
+    "preview": "node scripts/patch-source.js && opennextjs-cloudflare build && node scripts/patch-opennext.js && wrangler dev",
     "start": "next start",
     "lint": "next lint"
   },
