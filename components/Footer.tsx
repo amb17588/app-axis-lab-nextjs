@@ -7,7 +7,7 @@ export default function Footer() {
           <a href="#portfolio">Portfolio</a>
           <a href="#process">Process</a>
           <a href="#contact">Contact</a>
-          <a href="#">Privacy Policy</a>
+          <a href="/privacy">Privacy Policy</a>
         </div>
         <div className="footer-copy">&copy; 2026 AppAxisLab. All rights reserved.</div>
       </div>

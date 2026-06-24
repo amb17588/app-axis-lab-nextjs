@@ -69,16 +69,28 @@ export default function ProductModal({ product, onClose }: Props) {
                 </div>
               </div>
 
-              {product.playstore && (
+              {(product.playstore || product.privacyPolicy) && (
                 <div className="modal-actions">
-                  <a
-                    href={product.playstore}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-primary"
-                  >
-                    Get it on Google Play
-                  </a>
+                  {product.playstore && (
+                    <a
+                      href={product.playstore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary"
+                    >
+                      Get it on Google Play
+                    </a>
+                  )}
+                  {product.privacyPolicy && (
+                    <a
+                      href={product.privacyPolicy}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-secondary"
+                    >
+                      Privacy Policy
+                    </a>
+                  )}
                 </div>
               )}
             </div>
