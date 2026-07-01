@@ -119,4 +119,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/habbit_tracker_privacy',
   },
+  {
+    id: '10',
+    title: 'HireX AI',
+    category: 'Productivity',
+    filterCategory: 'apps',
+    desc: 'An AI-powered resume builder that helps you create, edit, and export professional resumes using customizable templates and AI-generated summaries and skill suggestions.',
+    img: '/image/logo.png',
+    features: ['AI-Powered Resume Suggestions', 'Customizable Resume Templates', 'PDF Merge, Split & Export Tools', 'Secure Cloud Sync'],
+    tech: ['React Native', 'Supabase', 'OpenAI', 'RevenueCat'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/hirex_ai_privacy',
+  },
 ]
