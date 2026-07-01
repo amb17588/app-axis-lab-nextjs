@@ -15,9 +15,15 @@ export default function ArtifyPrivacy() {
     >
       <div className={s.card}>
         <div className={s.privacyContent}>
-          <p>This page contains the Privacy Policy and End User License Agreement (EULA) for Artify: AR Draw Trace &amp; Sketch. By using the App, you agree to both documents.</p>
+          <div className={s.highlightBox}>
+            <p>
+              This page contains the <a href="#privacy">Privacy Policy</a> and{' '}
+              <a href="#eula">End User License Agreement (EULA)</a> for Artify: AR Draw Trace &amp; Sketch.
+              By using the App, you agree to both documents.
+            </p>
+          </div>
 
-          <h1>Privacy Policy</h1>
+          <h1 id="privacy">Privacy Policy</h1>
           <p>Artify: AR Draw Trace &amp; Sketch ("we", "our", or "us") respects your privacy. This Privacy Policy explains how we handle information when you use our drawing and sketch tracing mobile application (the "App").</p>
           <p>The App helps you trace sketches using your device camera or on-screen overlay. You may place paper in front of the camera to view a sketch overlay and draw on paper, or place paper on the screen and trace a sketch displayed on the device. The App does not require an account.</p>
 
@@ -125,7 +131,7 @@ export default function ArtifyPrivacy() {
 
           <hr className={s.divider} />
 
-          <h1>End User License Agreement (EULA)</h1>
+          <h1 id="eula">End User License Agreement (EULA)</h1>
           <p>This End User License Agreement ("Agreement") is a legal agreement between you ("User" or "you") and App Axis Lab ("Licensor", "we", "our", or "us") for Artify: AR Draw Trace &amp; Sketch (the "App"). By downloading, installing, or using the App, you agree to be bound by this Agreement. If you do not agree, do not download, install, or use the App.</p>
 
           <h2>1. License Grant</h2>

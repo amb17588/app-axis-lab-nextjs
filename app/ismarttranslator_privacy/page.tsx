@@ -15,9 +15,15 @@ export default function ISmartTranslatorPrivacy() {
     >
       <div className={s.card}>
         <div className={s.privacyContent}>
-          <p>This page contains the Privacy Policy and End User License Agreement (EULA) for ISmart Translator Voice and Text. By using the App, you agree to both documents.</p>
+          <div className={s.highlightBox}>
+            <p>
+              This page contains the <a href="#privacy">Privacy Policy</a> and{' '}
+              <a href="#eula">End User License Agreement (EULA)</a> for ISmart Translator Voice and Text.
+              By using the App, you agree to both documents.
+            </p>
+          </div>
 
-          <h1>Privacy Policy</h1>
+          <h1 id="privacy">Privacy Policy</h1>
           <p>ISmart Translator Voice and Text ("we", "our", or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
 
           <h2>1. Information We Collect</h2>
@@ -115,7 +121,7 @@ export default function ISmartTranslatorPrivacy() {
 
           <hr className={s.divider} />
 
-          <h1>End User License Agreement (EULA)</h1>
+          <h1 id="eula">End User License Agreement (EULA)</h1>
           <p>This End User License Agreement ("Agreement") is a legal agreement between you ("User" or "you") and App Axis Lab ("Licensor", "we", "our", or "us") for the ISmart Translator Voice and Text mobile application (the "App"). By downloading, installing, or using the App, you agree to be bound by this Agreement. If you do not agree, do not download, install, or use the App.</p>
 
           <h2>1. License Grant</h2>
