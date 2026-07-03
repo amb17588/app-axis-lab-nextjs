@@ -131,4 +131,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/hirex_ai_privacy',
   },
+  {
+    id: '11',
+    title: 'AI Notes Taker',
+    category: 'Productivity',
+    filterCategory: 'apps',
+    desc: 'A voice-to-text note-taking app that records audio memos and turns them into accurate transcripts and smart AI-generated summaries, synced securely across all your devices.',
+    img: '/image/logo.png',
+    features: ['AI Voice Transcription', 'Smart AI Summaries', 'Cross-Device Sync', 'PDF, Image & Video Text Extraction'],
+    tech: ['React Native', 'Supabase', 'OpenAI', 'RevenueCat'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/ainotestaker_privacy',
+  },
 ]
