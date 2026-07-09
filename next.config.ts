@@ -6,6 +6,14 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/app-ads',
+        destination: '/app-ads.txt',
+      },
+    ]
+  },
 }
 
 export default nextConfig
