@@ -143,4 +143,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/ainotestaker_privacy',
   },
+  {
+    id: '12',
+    title: 'Sanctuary: Voice Journal AI',
+    category: 'Health & Wellness',
+    filterCategory: 'apps',
+    desc: 'A private, voice-journaling app with no account required. Speak your thoughts, get AI-powered mood insights and reflections, and keep everything encrypted and on-device — your journal is yours alone.',
+    img: '/image/logo.png',
+    features: ['No Account, Fully Anonymous', 'On-Device Voice Journaling', 'AI Mood Insights & Reflections', 'Encrypted Optional Backup'],
+    tech: ['React Native', 'OpenAI API', 'Firebase', 'RevenueCat'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/sanctuary_privacy',
+  },
 ]
