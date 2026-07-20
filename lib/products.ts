@@ -155,4 +155,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/sanctuary_privacy',
   },
+  {
+    id: '13',
+    title: 'Studio Recorder',
+    category: 'Utilities',
+    filterCategory: 'utilities apps',
+    desc: 'An on-device screen recorder with face-cam overlay, watermarks, and a floating control button. Recordings and screenshots stay private on your device — no account and no cloud upload required.',
+    img: '/image/logo.png',
+    features: ['HD Screen Recording', 'Face-Cam & Watermark Overlay', 'Floating Control Button', 'On-Device Privacy, No Account Needed'],
+    tech: ['Kotlin', 'Android SDK', 'Firebase', 'RevenueCat'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/studio_recorder_privacy',
+  },
 ]
