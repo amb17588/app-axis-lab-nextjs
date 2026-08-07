@@ -167,4 +167,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/studio_recorder_privacy',
   },
+  {
+    id: '14',
+    title: 'Settly',
+    category: 'Finance',
+    filterCategory: 'apps',
+    desc: 'A debt and personal-finance management app that helps you track money you owe and are owed, log transactions, organize contacts, and stay on top of budgets — synced securely across your devices.',
+    img: '/image/logo.png',
+    features: ['Debt & Loan Tracking', 'Budgets & Recurring Entries', 'Contact-Linked Records', 'PIN & Biometric Lock'],
+    tech: ['React Native', 'Supabase', 'RevenueCat', 'Kotlin', 'Swift'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/settly_privacy_policy',
+  },
 ]
