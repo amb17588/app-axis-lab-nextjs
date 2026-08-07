@@ -179,4 +179,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/settly_privacy_policy',
   },
+  {
+    id: '15',
+    title: 'Privacy Shield',
+    category: 'Utilities',
+    filterCategory: 'utilities apps',
+    desc: 'A visual privacy overlay that draws a directional gradient over your screen, keeping content readable face-on while shielding it from side-angle glances. No account, no ads, no data leaves your device.',
+    img: '/image/logo.png',
+    features: ['Directional Gradient Overlay', 'Gyroscope-Based Angle Detection', 'Scheduled Auto Activation', 'Fully On-Device, No Account'],
+    tech: ['Kotlin', 'Android SDK', 'RevenueCat'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/privacy_shield_privacy',
+  },
 ]
