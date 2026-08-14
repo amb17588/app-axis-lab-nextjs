@@ -203,4 +203,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/voicefunk_privacy',
   },
+  {
+    id: '17',
+    title: 'Live Microphone',
+    category: 'Utilities',
+    filterCategory: 'utilities apps',
+    desc: 'An offline audio toolkit with hands-free push-to-talk recording, a manual voice recorder, on-device text-to-speech, voice effects, and a live microphone-to-speaker passthrough — no account, no cloud, everything stays on your device.',
+    img: '/image/logo.png',
+    features: ['Hold & Speak Push-to-Talk Recording', 'Text to Audio with OCR & PDF Import', 'On-Device Voice Effects', 'Live Mic Passthrough, No Account Needed'],
+    tech: ['Kotlin', 'Android SDK', 'FFmpeg'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/live_microphone_privacy',
+  },
 ]
