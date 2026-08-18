@@ -215,4 +215,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/live_microphone_privacy',
   },
+  {
+    id: '18',
+    title: 'WakeForge',
+    category: 'Productivity',
+    filterCategory: 'apps',
+    desc: 'A mission-based alarm clock that makes waking up a challenge to beat. Complete missions to silence your alarm, build streaks, and stay accountable with friends and shared alarms.',
+    img: '/image/logo.png',
+    features: ['Mission-Based Alarm Challenges', 'Anonymous Account, No Sign-Up', 'Friends, Groups & Shared Alarms', 'Streaks & Win Statistics'],
+    tech: ['Supabase', 'Kotlin', 'Swift'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/wakeforge_privacy',
+  },
 ]
