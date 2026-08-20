@@ -227,4 +227,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/wakeforge_privacy',
   },
+  {
+    id: '19',
+    title: 'Family Location Tracker',
+    category: 'Family & Safety',
+    filterCategory: 'apps',
+    desc: 'A family safety and location-sharing app built around private circles. See real-time location and battery status, set up geofence alerts, send an SOS in an emergency, and remotely ring a family member\'s phone to help them find it.',
+    img: '/image/logo.png',
+    features: ['Real-Time Circle Location Sharing', 'Geofence & Battery Alerts', 'One-Tap SOS Emergency Alerts', 'Remote Ring-My-Device'],
+    tech: ['React Native', 'Supabase', 'RevenueCat', 'Kotlin', 'Swift'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/family_location_tracker_privacy',
+  },
 ]
