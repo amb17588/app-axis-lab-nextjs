@@ -239,4 +239,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/family_location_tracker_privacy',
   },
+  {
+    id: '20',
+    title: 'My Diabetic Health',
+    category: 'Health & Fitness',
+    filterCategory: 'apps',
+    desc: 'A privacy-first glucose and blood pressure tracker that helps you log readings, medications, meals, and insulin doses, and generate doctor-ready reports — with all health data encrypted and stored locally on your device.',
+    img: '/image/logo.png',
+    features: ['Glucose & Blood Pressure Tracking', 'On-Device AES-256 Encryption', 'Biometric-Locked Health Vault', 'Doctor Report PDF Export'],
+    tech: ['Kotlin', 'Android SDK', 'SQLCipher', 'RevenueCat'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/my_diabetic_health_privacy',
+  },
 ]
