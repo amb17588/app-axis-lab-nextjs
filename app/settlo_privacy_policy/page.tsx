@@ -11,7 +11,7 @@ export default function SettloPrivacyPolicy() {
     <PrivacyLayout
       appName="Settlo"
       subtitle="Privacy Policy & End User License Agreement"
-      lastUpdated="Last updated: June 16, 2026"
+      lastUpdated="Last updated: August 21, 2026"
     >
       <div className={s.card}>
         <div className={s.privacyContent}>
@@ -88,11 +88,13 @@ export default function SettloPrivacyPolicy() {
           <p>Expense data, group details, comments, and related information you share within a group are visible only to selected participants in that group. You choose who to share with when creating or joining groups and adding expenses.</p>
           <p><strong>4.2 With Service Providers</strong></p>
           <p>We use trusted vendors for hosting, cloud infrastructure, analytics, crash reporting, customer support tools, and payment/subscription management. These providers process data on our behalf under contractual obligations and only as needed to perform their services.</p>
-          <p><strong>4.3 Legal Requirements</strong></p>
+          <p><strong>4.3 With Our AI Provider</strong></p>
+          <p>If you use our optional receipt-scanning or "quick add expense" features, the receipt photo or the text/voice description you enter (along with the names of any friends or groups you mention) is sent to our third-party AI provider, OpenAI, solely to extract or interpret that information into an expense. See Section 9A ("AI-Powered Features") for details. We do not send your full contact list, financial account information, or any other personal data to our AI provider.</p>
+          <p><strong>4.4 Legal Requirements</strong></p>
           <p>We may disclose information if required by law, regulation, legal process, or governmental request, or when we believe disclosure is necessary to protect the rights, property, or safety of Settlo, our users, or others.</p>
-          <p><strong>4.4 Business Transfers</strong></p>
+          <p><strong>4.5 Business Transfers</strong></p>
           <p>If Settlo is involved in a merger, acquisition, reorganization, or sale of assets, your data may be transferred as part of that transaction. We will notify you of any material change in ownership or use of your personal information.</p>
-          <p><strong>4.5 Non-Personal Data</strong></p>
+          <p><strong>4.6 Non-Personal Data</strong></p>
           <p>We may share aggregated or anonymized data that cannot reasonably be used to identify you for analytics, research, and business purposes.</p>
           <p>We do <strong>not</strong> sell your personal information.</p>
 
@@ -128,8 +130,17 @@ export default function SettloPrivacyPolicy() {
             <li>Analytics and crash reporting (e.g., Firebase Analytics, Firebase Crashlytics)</li>
             <li>Subscription management providers</li>
             <li>Payment processors operated by Apple and Google</li>
+            <li>AI service providers (OpenAI), used only for the optional receipt-scanning and quick-add-expense features described below</li>
           </ul>
-          <p>These services operate under their own privacy policies. We recommend reviewing the privacy policies of our partners, including <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> where applicable.</p>
+          <p>These services operate under their own privacy policies. We recommend reviewing the privacy policies of our partners, including <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> and <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI's Privacy Policy</a> where applicable.</p>
+
+          <h2>9A. AI-Powered Features</h2>
+          <p>Settlo offers two optional features that use a third-party AI service, <strong>OpenAI</strong>, to save you time on manual data entry:</p>
+          <ul>
+            <li><strong>Receipt scanning:</strong> when you choose to scan a receipt (by camera or from your photo library), the photo is sent to OpenAI to extract the merchant name, line items, and total. The extracted data is used only to help fill in your expense.</li>
+            <li><strong>Quick-add expense parsing:</strong> when you type or speak a short expense description (e.g. "lunch $25 with Sarah"), the text — along with the names of any friends or groups you specifically mention — is sent to OpenAI to interpret it into a structured expense entry.</li>
+          </ul>
+          <p>Both features are optional. Before either feature sends any data, the App shows an in-app notice explaining what will be sent and to whom, and requires your explicit confirmation to proceed; you can decline and enter the expense manually instead. Data sent to OpenAI is used solely to process your specific request and is handled according to OpenAI's own privacy and data-use policies.</p>
 
           <h2>10. Your Rights</h2>
           <p><strong>10.1 Access &amp; Update</strong></p>
