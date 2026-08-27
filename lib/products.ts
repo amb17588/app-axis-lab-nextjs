@@ -251,4 +251,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/my_diabetic_health_privacy',
   },
+  {
+    id: '21',
+    title: 'AxisCast',
+    category: 'Utilities',
+    filterCategory: 'utilities apps',
+    desc: 'A screen mirroring and casting app that streams your phone’s screen directly to nearby computers, TVs, and other screens over your local Wi-Fi — no account, no cloud server, fully peer-to-peer.',
+    img: '/image/logo.png',
+    features: ['Peer-to-Peer Screen Mirroring', 'QR / PIN Device Pairing', 'No Account, Fully Anonymous', 'Encrypted Local Wi-Fi Streaming'],
+    tech: ['Kotlin', 'Android SDK', 'WebRTC', 'Firebase', 'RevenueCat'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/axiscast_privacy',
+  },
 ]
