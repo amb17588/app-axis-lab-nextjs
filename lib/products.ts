@@ -263,4 +263,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/axiscast_privacy',
   },
+  {
+    id: '22',
+    title: 'Teleprompter',
+    category: 'Productivity',
+    filterCategory: 'apps',
+    desc: 'A script reader and video recorder that auto-scrolls your script as you read it on camera, including hands-free voice-driven scrolling, then lets you trim, caption, and style the recording in a built-in video editor.',
+    img: '/image/logo.png',
+    features: ['Voice-Driven Auto-Scroll Teleprompter', 'On-Device Video Editor & Captions', 'AI Script Writer (Bring-Your-Own-Key)', 'No Account, Fully Local-First'],
+    tech: ['React Native', 'OpenAI API', 'Anthropic API', 'Kotlin', 'Swift'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/teleprompter_privacy',
+  },
 ]
