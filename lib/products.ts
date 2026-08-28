@@ -275,4 +275,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/teleprompter_privacy',
   },
+  {
+    id: '23',
+    title: 'Odometer',
+    category: 'Travel & Navigation',
+    filterCategory: 'apps',
+    desc: 'A GPS speedometer and trip tracker that shows your real-time speed on an analog or digital gauge, records trip distance, average and max speed, and displays your route on a live map — all with no account required.',
+    img: '/image/logo.png',
+    features: ['Real-Time GPS Speedometer', 'Trip Distance & Speed Stats', 'Live Route Map', 'No Account, Fully Local-First'],
+    tech: ['Kotlin', 'Android SDK', 'Swift', 'AdMob'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/odometer_privacy',
+  },
 ]

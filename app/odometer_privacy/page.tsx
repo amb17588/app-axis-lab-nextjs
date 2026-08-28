@@ -1,0 +1,313 @@
+import type { Metadata } from 'next'
+import PrivacyLayout from '@/components/PrivacyLayout'
+import s from '@/styles/privacy.module.css'
+
+export const metadata: Metadata = {
+  title: 'Odometer — Privacy Policy & EULA | App Axis Lab',
+}
+
+export default function OdometerPrivacy() {
+  return (
+    <PrivacyLayout
+      appName="Odometer"
+      subtitle="GPS Speedometer & Trip Tracker — Privacy Policy & End User License Agreement"
+      lastUpdated="Last updated: August 28, 2026"
+    >
+      <div className={s.card}>
+        <div className={s.privacyContent}>
+          <p>
+            This page contains the <a href="#privacy">Privacy Policy</a> and{' '}
+            <a href="#eula">End User License Agreement (EULA)</a> for Odometer. By
+            downloading, installing, or using the App, you agree to both documents.
+          </p>
+
+          <h1 id="privacy">Privacy Policy</h1>
+
+          <h2>Scope</h2>
+          <p>
+            Welcome to Odometer&apos;s Privacy Policy. Your privacy is important to us. This
+            Privacy Policy explains how App Axis Lab (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) collects, uses,
+            stores, and shares your information when you use our GPS speedometer and
+            trip-tracking mobile application (the &quot;App&quot; or &quot;Services&quot;).
+          </p>
+          <p>If you do not agree with this Privacy Policy, please do not use our Services.</p>
+
+          <h2>Overview</h2>
+          <p>
+            Odometer uses your device&apos;s GPS to display your real-time speed on a beautiful
+            analog or digital speedometer, record trip statistics (distance, average speed,
+            maximum speed, and duration), and show your route on a live map. No account is
+            required. All trip data is stored locally on your device. We do not sell your
+            personal information.
+          </p>
+          <div className={s.highlightBox}>
+            <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
+              <li><strong>No account is required</strong> — Odometer works without sign-in, email, or any user profile.</li>
+              <li><strong>Trip data stays on your device</strong> — your speed history, trip logs, and settings are stored locally and never transmitted to our servers.</li>
+              <li><strong>Location data is used only for speed and distance</strong> — GPS readings are processed locally in real time. We do not store or transmit your precise location to any server.</li>
+              <li><strong>Ads are served by Google AdMob</strong> — Odometer displays banner and interstitial ads. Google may collect certain data as described in Section 8.</li>
+              <li><strong>We never sell your personal information.</strong></li>
+            </ul>
+          </div>
+
+          <h2>1. What Odometer Does</h2>
+          <p>Odometer is a GPS-powered speedometer and trip-tracking app for Android and iOS. When you start a drive, it uses your device&apos;s GPS to measure your speed in real time and display it on an analog gauge, a digital readout, or a live map. At the end of each trip, it saves statistics — distance traveled, maximum speed, average speed, and duration — locally on your device so you can review your journey history.</p>
+          <p>The App is <strong>not</strong> a navigation app, a route planner, or a law-enforcement tool. It is a speed-monitoring and trip-logging tool only.</p>
+
+          <h2>2. Information We Collect</h2>
+
+          <div className={s.highlightBox}>
+            <strong>Odometer does not transmit location data or trip history to our servers.</strong> All data the App creates stays on your device, except for interactions with Google AdMob as described in Section 8.
+          </div>
+
+          <p><strong>2.1 Location &amp; GPS Data</strong></p>
+          <p>When the App is in use (and when you grant background location permission on Android), Odometer reads your device&apos;s GPS to determine:</p>
+          <ul>
+            <li><strong>Current speed</strong> — used to display the real-time speedometer reading.</li>
+            <li><strong>Coordinates</strong> — used to display your position on the in-app map view. Coordinates are never stored in trip logs or transmitted.</li>
+            <li><strong>GPS accuracy</strong> — used to filter out unreliable readings (speeds reported with accuracy worse than 50 m are discarded).</li>
+          </ul>
+          <p>GPS data is processed <strong>in memory only</strong> while the App is running. We do not log, upload, or share your GPS coordinates.</p>
+
+          <p><strong>2.2 Trip Statistics</strong></p>
+          <p>When you end a drive session, the App saves the following trip summary <strong>locally on your device</strong>:</p>
+          <ul>
+            <li>Trip start and end time</li>
+            <li>Total distance traveled</li>
+            <li>Maximum speed reached</li>
+            <li>Average speed</li>
+            <li>Trip duration</li>
+          </ul>
+          <p>This data is stored in your device&apos;s local storage and is accessible only within the App. It is never uploaded to any server.</p>
+
+          <p><strong>2.3 App Settings</strong></p>
+          <p>Your chosen preferences — speed unit (km/h, mph, knots), display theme, accent color, language, analog gauge range, vehicle mode, and other settings — are stored locally on your device. They are never transmitted anywhere.</p>
+
+          <p><strong>2.4 Billing Information</strong></p>
+          <p>If you purchase a premium subscription or in-app purchase, payment is processed by the Google Play Store or Apple App Store. We do not directly collect or store your payment card details. We may receive subscription status and anonymous purchase identifiers to unlock premium features.</p>
+
+          <h2>3. How We Use Your Information</h2>
+          <p>We use the information described above to:</p>
+          <ul>
+            <li>Display your real-time speed on the speedometer</li>
+            <li>Calculate and display distance, average speed, and maximum speed during a drive</li>
+            <li>Show your current position on the in-app map</li>
+            <li>Save your trip history locally so you can review past journeys</li>
+            <li>Apply your display preferences and language settings</li>
+            <li>Trigger the speed alarm when your speed exceeds your configured limit</li>
+            <li>Process and manage premium purchases through the app stores</li>
+          </ul>
+          <p>We do <strong>not</strong> use GPS data, trip statistics, or any other on-device data for advertising profiling, analytics, or automated decision-making.</p>
+
+          <h2>4. How We Share Your Information</h2>
+          <p>We do not share your personal information with third parties, except as described in Section 8 (Google AdMob) and Section 7 (app store payments). We do not sell your personal information.</p>
+
+          <h2 id="permissions">5. Permissions</h2>
+          <p>Odometer requests the following permissions:</p>
+          <ul>
+            <li><strong>Precise Location (ACCESS_FINE_LOCATION):</strong> Required to receive accurate GPS speed and position readings from your device. Without this, the speedometer cannot function.</li>
+            <li><strong>Background Location (ACCESS_BACKGROUND_LOCATION — Android):</strong> Requested so the App can continue tracking your speed and distance when your screen is off or when you switch to another app. You may deny this; speed tracking will only work while the App is in the foreground.</li>
+            <li><strong>Location Services (iOS):</strong> &quot;Allow While Using App&quot; is required for foreground tracking. &quot;Always Allow&quot; enables background speed tracking.</li>
+            <li><strong>Foreground Service (FOREGROUND_SERVICE):</strong> Keeps the GPS speed service running reliably on Android while you drive. Android requires a visible notification when a foreground service is active.</li>
+            <li><strong>Foreground Service Type — Location (FOREGROUND_SERVICE_LOCATION):</strong> Required by Android 14+ to declare that our foreground service uses location data.</li>
+            <li><strong>Draw Over Other Apps (SYSTEM_ALERT_WINDOW — Android):</strong> Required for the optional Floating Window mode, which displays a small speedometer overlay on top of other apps while you drive. This permission is only requested if you enable Window Mode in Settings.</li>
+            <li><strong>Vibrate (VIBRATE):</strong> Used for the optional speed alarm, which vibrates your device when your speed exceeds your configured maximum.</li>
+            <li><strong>Ignore Battery Optimizations (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS — Android):</strong> Requests that the device not stop the GPS service in the background. You can deny this; the App will still work but background tracking may be interrupted on battery-aggressive devices.</li>
+            <li><strong>Post Notifications (POST_NOTIFICATIONS — Android 13+):</strong> Required to show the foreground service notification while background tracking is active.</li>
+          </ul>
+
+          <h2>6. Foreground Service Notification</h2>
+          <p>When background speed tracking is active on Android, a persistent notification is shown in your notification drawer. This is a mandatory Android requirement for foreground services. The notification indicates that GPS tracking is running and provides a way to stop it. It contains no personal data.</p>
+
+          <h2>7. Subscriptions &amp; Payments</h2>
+          <p>Odometer may offer a premium subscription or in-app purchases to unlock additional features. When you purchase:</p>
+          <ul>
+            <li>Payments are processed by the Google Play Store or Apple App Store. We do not directly collect or store your payment card details.</li>
+            <li>We receive subscription status and related purchase metadata to unlock premium features.</li>
+            <li>Free trials, if offered, convert to paid subscriptions unless cancelled before the trial ends.</li>
+            <li>You can manage or cancel subscriptions through your Google Play account (<em>Google Play &gt; Profile &gt; Payments &amp; subscriptions &gt; Subscriptions</em>) or through your Apple ID settings (<em>Settings &gt; [Your Name] &gt; Subscriptions</em>).</li>
+            <li>
+              Refunds and billing disputes are handled according to{' '}
+              <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener noreferrer">
+                Google Play&apos;s refund policy
+              </a>{' '}
+              or{' '}
+              <a href="https://support.apple.com/en-us/HT204084" target="_blank" rel="noopener noreferrer">
+                Apple&apos;s refund policy
+              </a>.
+            </li>
+          </ul>
+          <p>
+            By subscribing, you confirm that you have read and agree to our{' '}
+            <a href="#privacy">Privacy Policy</a> and <a href="#eula">End User License Agreement (EULA)</a>.
+          </p>
+
+          <h2 id="third-party">8. Third-Party Services — Google AdMob</h2>
+          <p>Odometer displays banner and interstitial advertisements served by <strong>Google AdMob</strong>. AdMob may collect and use certain information from your device to serve relevant ads, including:</p>
+          <ul>
+            <li>Device identifiers (advertising ID, device model, OS version)</li>
+            <li>Interaction data (ad impressions, clicks)</li>
+            <li>Coarse location (if you have granted location permission and applicable ad settings allow it)</li>
+            <li>IP address</li>
+          </ul>
+          <p>
+            This data is collected and processed by Google under their own privacy policy. We configure AdMob to request <strong>non-personalized ads</strong> where possible to minimize data collection. For more information, see{' '}
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+              Google&apos;s Privacy Policy
+            </a>{' '}
+            and{' '}
+            <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">
+              How Google uses data when you use our partners&apos; apps
+            </a>.
+          </p>
+          <p>No other third-party analytics, crash-reporting, or cloud-storage SDKs are integrated into the App.</p>
+
+          <h2>9. Data Security</h2>
+          <p>Because Odometer stores only local data (trip history and settings) and never transmits it to external servers, the attack surface is minimal. Local data is stored in your device&apos;s protected app storage. GPS data is never persisted beyond the in-memory trip session.</p>
+
+          <h2>10. Your Rights &amp; Controls</h2>
+
+          <p><strong>10.1 Access &amp; Control</strong></p>
+          <p>You can view all your trip history within the App and delete individual trips at any time. You can edit all settings directly within the App.</p>
+
+          <p><strong>10.2 Delete Your Data</strong></p>
+          <p>Uninstalling the App permanently removes all locally stored trip history and settings from your device. There is no account to delete because no account exists.</p>
+
+          <p><strong>10.3 Location Permissions</strong></p>
+          <p>You can revoke location permissions at any time through your device&apos;s Settings. Revoking foreground location will disable the speedometer entirely. Revoking background location will limit tracking to foreground-only use.</p>
+
+          <p><strong>10.4 Ad Personalization</strong></p>
+          <p>
+            You can limit ad tracking through your device settings: on Android via <em>Settings &gt; Privacy &gt; Ads</em>, and on iOS via <em>Settings &gt; Privacy &amp; Security &gt; Tracking</em>. You may also opt out of interest-based advertising through{' '}
+            <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">
+              Google Ad Settings
+            </a>.
+          </p>
+
+          <p><strong>10.5 For EU/EEA &amp; UK Residents (GDPR)</strong></p>
+          <p>
+            If you are located in the European Union, European Economic Area, or United Kingdom, you have rights under the GDPR, including rights to access, rectify, erase, restrict, or object to processing of your personal data. Because Odometer does not collect personal data on our own servers, most rights are exercised directly on your device. For data processed by Google AdMob, you may contact Google or exercise your rights through Google&apos;s privacy tools. For questions, contact us at{' '}
+            <a href="mailto:support@appaxislab.com">support@appaxislab.com</a>.
+          </p>
+
+          <p><strong>10.6 For California Residents (CCPA/CPRA)</strong></p>
+          <p>If you are a California resident, you have rights under the CCPA and CPRA. Odometer does not sell your personal information. We do not collect personal data on our servers. Trip history and settings stored locally on your device can be deleted by uninstalling the App. For questions about data processed by Google AdMob, refer to Google&apos;s privacy tools.</p>
+
+          <h2>11. Data Retention</h2>
+          <p>Trip history and settings are stored only on your device for as long as the App is installed. We retain no data on external servers. Uninstalling the App permanently deletes all App data from your device.</p>
+
+          <h2>12. Children&apos;s Privacy</h2>
+          <p>Odometer is not intended for users under 13 years of age (or the applicable age of consent in your jurisdiction). We do not knowingly collect personal information from children. Because the App does not collect personal data on our servers, no child data is held by us.</p>
+          <p>
+            If you are a parent or guardian with concerns, please contact us at{' '}
+            <a href="mailto:support@appaxislab.com">support@appaxislab.com</a>.
+          </p>
+
+          <h2>13. Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time. Changes take effect upon posting, and we will update the &quot;Last updated&quot; date at the top of this page. For material changes that significantly affect your rights, we will provide notice through the App or other appropriate means. We encourage you to review this policy periodically.</p>
+
+          <h2>14. Contact Us</h2>
+          <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:support@appaxislab.com">support@appaxislab.com</a></li>
+            <li><strong>Developer:</strong> App Axis Lab</li>
+          </ul>
+
+          <hr className={s.divider} />
+
+          <h1 id="eula">End User License Agreement (EULA)</h1>
+          <p>
+            This End User License Agreement (&quot;Agreement&quot;) is a legal agreement between you
+            (&quot;User&quot; or &quot;you&quot;) and App Axis Lab (&quot;Licensor&quot;, &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) for the
+            Odometer mobile application (the &quot;App&quot;). By downloading, installing, or using
+            the App, you agree to be bound by this Agreement. If you do not agree, do not
+            download, install, or use the App.
+          </p>
+
+          <h2>1. License Grant</h2>
+          <p>Subject to your compliance with this Agreement, we grant you a limited, non-exclusive, non-transferable, revocable license to install and use the App on devices you own or control, for your personal, non-commercial use, in accordance with this Agreement and applicable app store terms.</p>
+
+          <h2>2. Restrictions</h2>
+          <p>You agree not to:</p>
+          <ul>
+            <li>Copy, modify, adapt, or create derivative works of the App</li>
+            <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App, except where expressly permitted by law</li>
+            <li>Rent, lease, lend, sell, sublicense, or distribute the App or any part of it</li>
+            <li>Remove, alter, or obscure any proprietary notices or labels on the App</li>
+            <li>Use the App for any unlawful purpose or in any way that violates applicable laws or regulations</li>
+            <li>Use the App while operating a vehicle in a manner that endangers yourself or others</li>
+            <li>Interfere with or disrupt the App or connected systems</li>
+            <li>Use automated systems or bots to access or use the App without our written consent</li>
+          </ul>
+
+          <h2>3. Intellectual Property</h2>
+          <p>The App, including its design, trademarks, software, and content, is owned by App Axis Lab or its licensors and is protected by copyright, trademark, and other intellectual property laws. This Agreement does not transfer any ownership rights to you.</p>
+
+          <h2>4. Your Trip Data &amp; Settings</h2>
+          <p>All trip history and settings you create in the App are stored locally on your device. You are responsible for maintaining your device&apos;s security. Because no account or cloud sync is involved, we cannot recover your trip data if you uninstall the App or lose your device.</p>
+
+          <h2>5. Responsible Use &amp; Safe Driving</h2>
+          <p>
+            Odometer is a speed-monitoring and trip-logging tool designed to be used as a supplementary reference. It is <strong>not</strong> a substitute for your vehicle&apos;s factory speedometer, navigation system, or professional driving advice. You must comply with all applicable traffic laws, speed limits, and road rules. <strong>Never interact with the App while driving in a way that distracts you from the road.</strong> You are solely responsible for safe driving and any consequences arising from your use of the App while operating a vehicle.
+          </p>
+
+          <h2>6. GPS Accuracy Disclaimer</h2>
+          <p>GPS-based speed and distance measurements are subject to signal conditions, atmospheric factors, and device hardware limitations. Readings may vary from your vehicle&apos;s actual speed or odometer. Odometer is not certified for legal speed measurement purposes and should not be used as evidence of speed in any legal proceeding.</p>
+
+          <h2>7. Permissions &amp; Device Access</h2>
+          <p>
+            The App requests access to device location (foreground and optionally background), vibration, display-over-apps (for Floating Window mode), foreground service, and notifications to support the features described in our{' '}
+            <a href="#privacy">Privacy Policy</a>. You may deny certain permissions, but related features may not function.
+          </p>
+
+          <h2>8. Advertising</h2>
+          <p>
+            Odometer displays ads served by Google AdMob. By using the App, you agree that ads may be displayed and that Google may collect certain data as described in Section 8 of our Privacy Policy and in{' '}
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+              Google&apos;s Privacy Policy
+            </a>.
+          </p>
+
+          <h2>9. Subscriptions &amp; In-App Purchases</h2>
+          <p>Odometer may offer a premium subscription or in-app purchases to unlock additional features. Payment and billing are processed by the Google Play Store or Apple App Store. Refunds and billing disputes are handled according to the applicable store&apos;s policies. We do not store your full payment card details.</p>
+          <p>Free trials, if offered, convert to paid subscriptions unless cancelled before the trial ends, in accordance with the applicable store&apos;s rules.</p>
+          <p>
+            By subscribing, you confirm that you have read and agree to our{' '}
+            <a href="#privacy">Privacy Policy</a> and <a href="#eula">End User License Agreement (EULA)</a>.
+          </p>
+
+          <h2>10. Disclaimer of Warranties</h2>
+          <p>THE APP IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE. GPS SPEED AND DISTANCE READINGS ARE ESTIMATES BASED ON DEVICE SENSORS AND MAY NOT REFLECT ACTUAL VEHICLE SPEED OR DISTANCE. ODOMETER IS NOT A CERTIFIED SPEED-MEASUREMENT DEVICE AND SHOULD NOT BE RELIED UPON AS ONE.</p>
+
+          <h2>11. Limitation of Liability</h2>
+          <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, APP AXIS LAB AND ITS AFFILIATES, OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR GOODWILL, ARISING OUT OF OR RELATED TO YOUR USE OF OR INABILITY TO USE THE APP, INCLUDING ANY ACCIDENT, INJURY, OR LOSS THAT OCCURS WHILE USING THE APP DURING VEHICLE OPERATION.</p>
+          <p>OUR TOTAL LIABILITY FOR ANY CLAIM ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE APP SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID US FOR THE APP IN THE TWELVE (12) MONTHS BEFORE THE CLAIM, OR (B) FIFTY U.S. DOLLARS (USD $50), WHERE PERMITTED BY LAW.</p>
+
+          <h2>12. Indemnification</h2>
+          <p>You agree to indemnify and hold harmless App Axis Lab from any claims, damages, losses, liabilities, and expenses (including reasonable legal fees) arising from your use of the App, your violation of this Agreement or applicable law, or your operation of a vehicle while using the App.</p>
+
+          <h2>13. Termination</h2>
+          <p>This license is effective until terminated. We may suspend or terminate your access to the App at any time if you breach this Agreement. Upon termination, you must cease all use of the App and delete all copies from your devices. You may terminate at any time by uninstalling the App. Sections that by their nature should survive termination will survive.</p>
+
+          <h2>14. Changes to This Agreement</h2>
+          <p>We may update this EULA from time to time. Continued use of the App after changes become effective constitutes acceptance of the revised Agreement. The &quot;Last updated&quot; date at the top of this page will reflect material revisions.</p>
+
+          <h2>15. Governing Law &amp; Disputes</h2>
+          <p>This Agreement is governed by the laws of the jurisdiction in which App Axis Lab operates, without regard to conflict-of-law principles, except where mandatory consumer protection laws in your country provide otherwise. Any dispute shall be resolved in the courts of that jurisdiction, unless applicable law requires a different forum.</p>
+
+          <h2>16. Children</h2>
+          <p>The App is not intended for children under 13 years of age (or the applicable age of consent in your jurisdiction). We do not knowingly collect personal information from children as described in our Privacy Policy.</p>
+
+          <h2>17. App Stores (Google &amp; Apple)</h2>
+          <p>If you obtained the App through Google Play, you agree that Google is not a party to this Agreement and has no responsibility or liability with respect to the App. Your use of Google Play is subject to Google&apos;s terms of service. If you obtained the App through the Apple App Store, Apple is not a party to this Agreement and has no responsibility for the App or its content. Apple has no obligation to provide maintenance or support for the App. Your use of the App Store is subject to Apple&apos;s terms of service.</p>
+
+          <h2>18. Severability &amp; Entire Agreement</h2>
+          <p>If any provision of this Agreement is held invalid or unenforceable, the remaining provisions remain in full force. This Agreement, together with our Privacy Policy, constitutes the entire agreement between you and App Axis Lab regarding the App and supersedes prior understandings on the same subject.</p>
+
+          <h2>19. Contact</h2>
+          <p>For questions about this EULA, contact App Axis Lab at <a href="mailto:support@appaxislab.com">support@appaxislab.com</a>.</p>
+        </div>
+      </div>
+    </PrivacyLayout>
+  )
+}
