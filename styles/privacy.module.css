@@ -189,6 +189,30 @@
   margin: 0 !important;
 }
 
+/* ── Warning box ── */
+.warnBox {
+  background: rgba(245, 158, 11, 0.06);
+  border: 1px solid rgba(245, 158, 11, 0.18);
+  border-left: 3px solid rgba(245, 158, 11, 0.6);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+}
+
+/* ── Health data box ── */
+.healthBox {
+  background: rgba(16, 185, 129, 0.06);
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  border-left: 3px solid rgba(16, 185, 129, 0.6);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+}
+
 /* ── Table of contents ── */
 .toc {
   background: rgba(59, 130, 246, 0.03);

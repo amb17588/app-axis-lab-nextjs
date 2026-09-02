@@ -22,6 +22,7 @@ export const products: Product[] = [
     features: ['GPS Route Tracking', 'Community Challenges', 'Step & Calorie Counter', 'Friend Leaderboards'],
     tech: ['React Native', 'Google Health Connect', 'Apple HealthKit', 'Kotlin', 'Swift'],
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/walkmates_privacy',
   },
   {
     id: '2',
