@@ -11,7 +11,7 @@ export default function SanctuaryPrivacyPolicy() {
     <PrivacyLayout
       appName="Sanctuary"
       subtitle="Privacy Policy & End User License Agreement"
-      lastUpdated="Last updated: July 14, 2026"
+      lastUpdated="Last updated: September 16, 2026"
     >
       <div className={s.card}>
         <div className={s.privacyContent}>
@@ -26,7 +26,7 @@ export default function SanctuaryPrivacyPolicy() {
           <h2>Overview</h2>
           <p>Sanctuary is built around a simple idea: your journal is yours.</p>
           <div className={s.highlightBox}>
-            <p><strong>No account, no sign-up.</strong> Sanctuary works fully offline and never asks for your name, email address, or a password. <strong>Your recordings stay on your device.</strong> Audio, transcripts, and AI-generated reflections are stored locally — we don&apos;t operate a server that stores your journal. <strong>Backup is optional and encrypted.</strong> We don&apos;t sell or publish your journal.</p>
+            <p><strong>No account, no sign-up.</strong> Sanctuary works fully offline and never asks for your name, email address, or a password. <strong>Your recordings stay on your device.</strong> Audio, transcripts, and AI-generated reflections are stored locally — we don&apos;t operate a server that stores your journal. <strong>Backup is optional and encrypted.</strong> <strong>AI features require your explicit permission.</strong> Sanctuary never sends your journal text to our AI provider, OpenAI, unless and until you affirmatively opt in — see Section 2.5 and Section 4.2. <strong>We don&apos;t sell or publish your journal.</strong></p>
           </div>
 
           <h2>1. No Account Required</h2>
@@ -42,7 +42,7 @@ export default function SanctuaryPrivacyPolicy() {
           <p><strong>2.1 Information You Provide</strong></p>
           <ul>
             <li>Voice recordings you create within the App</li>
-            <li>Transcripts generated from your recordings, using your device&apos;s built-in speech recognition</li>
+            <li>Transcripts generated from your recordings, using your device&apos;s built-in speech recognition. Depending on your device settings, this recognition may run entirely on-device, or your device&apos;s operating system (Apple or Google, depending on platform) may send the audio to its own cloud speech-recognition service to produce the transcript. This routing is controlled by iOS/Android and your device settings, not by Sanctuary, and Sanctuary itself never sends your raw audio anywhere.</li>
             <li>Photos and videos you optionally attach to a journal entry</li>
             <li>A display name, if you choose to set one in Edit Profile (stored on your device only)</li>
             <li>Support messages you send us directly, e.g. by email</li>
@@ -63,7 +63,9 @@ export default function SanctuaryPrivacyPolicy() {
           <p><strong>2.4 Billing Information</strong></p>
           <p>If you subscribe to Sanctuary Pro, your purchase is processed entirely by the Apple App Store or Google Play Store and managed on our behalf by RevenueCat. We receive only your subscription status and purchase metadata (e.g. product identifier, renewal date) — never your card number or billing address.</p>
           <p><strong>2.5 AI-Generated Insights</strong></p>
-          <p>If you use Sanctuary&apos;s AI insight features (mood analysis, weekly and monthly reflections), the text transcript of the relevant entries — never the audio itself — is sent to OpenAI&apos;s API to generate a summary. See Section 4.2 for details.</p>
+          <p>Sanctuary offers optional AI features — per-entry mood tags, and weekly/monthly &quot;AI Recommendations&quot; reflections — that are disabled by default and require your explicit permission. The first time these features would otherwise activate, the App shows an in-app disclosure explaining that entry text will be sent to OpenAI, our third-party AI provider, and asks you to Allow or Don&apos;t Allow it.</p>
+          <p>If you tap <strong>Allow</strong>, the text transcript of the relevant journal entry or entries — never the audio itself — is sent to OpenAI&apos;s API to generate mood tags or a reflection. If you tap <strong>Don&apos;t Allow</strong>, or never respond, no journal text is sent to OpenAI, and these features simply don&apos;t run; your entries otherwise work normally.</p>
+          <p>You can change this choice at any time in <strong>Profile &gt; Privacy &gt; AI Mood Tags &amp; Insights</strong>. Turning it off stops all future sharing with OpenAI immediately; it does not retroactively delete data already sent for a past entry. See Section 4.2 for how OpenAI handles this data.</p>
 
           <h2>3. How We Use Your Information</h2>
           <p>We use the information described above to:</p>
@@ -87,10 +89,10 @@ export default function SanctuaryPrivacyPolicy() {
             <li><strong>RevenueCat:</strong> subscription and purchase management</li>
             <li><strong>Google AdMob</strong> and its mediation partners (see Section 8): advertising, for free-tier users only</li>
             <li><strong>Google Drive:</strong> only if you choose to enable backup, to your own Drive storage — not ours</li>
-            <li><strong>OpenAI:</strong> only the text transcript of an entry, and only when you use an AI insight feature</li>
+            <li><strong>OpenAI:</strong> only the text transcript of an entry, and only after you&apos;ve explicitly allowed AI features in the in-app consent prompt or in Profile &gt; Privacy</li>
           </ul>
           <p><strong>4.2 AI Processing</strong></p>
-          <p>When you use Sanctuary&apos;s mood analysis or AI reflection features, the transcript text of the relevant entries is sent to OpenAI&apos;s API to generate the response. Audio is never sent to OpenAI. OpenAI processes this text under its own privacy policy and API terms. We recommend reviewing OpenAI&apos;s privacy policy for details on how it handles API content.</p>
+          <p>If, and only if, you have opted in via the in-app consent prompt described in Section 2.5, the transcript text of the relevant entries is sent to OpenAI&apos;s API (model: GPT-4o mini) to generate mood tags or a reflection. Audio is never sent to OpenAI, and no entry text is sent unless that permission has been granted. OpenAI processes this text under its own privacy policy and API terms and, under OpenAI&apos;s API data usage policy, does not use data submitted via the API to train its models. We recommend reviewing OpenAI&apos;s privacy policy for further details on how it handles API content.</p>
           <p><strong>4.3 Legal Requirements</strong></p>
           <p>We may disclose information if required by law, regulation, legal process, or governmental request, or when we believe disclosure is necessary to protect the rights, property, or safety of Sanctuary, our users, or others.</p>
           <p><strong>4.4 Business Transfers</strong></p>
@@ -103,7 +105,7 @@ export default function SanctuaryPrivacyPolicy() {
           <p>Sanctuary may request the following device permissions:</p>
           <ul>
             <li><strong>Microphone:</strong> to record your voice journal entries. Required for the App&apos;s core purpose.</li>
-            <li><strong>Speech Recognition:</strong> to transcribe your recordings into text, using your device&apos;s built-in speech recognition.</li>
+            <li><strong>Speech Recognition:</strong> to transcribe your recordings into text, using your device&apos;s built-in speech recognition, which may process audio on-device or via Apple&apos;s/Google&apos;s cloud speech-recognition service depending on your device (see Section 2.1).</li>
             <li><strong>Camera &amp; Photo Library:</strong> to attach a photo or video to a journal entry. Optional — you can use Sanctuary fully without granting this.</li>
             <li><strong>Notifications:</strong> for optional daily reminders to journal. You can disable these at any time in Settings.</li>
             <li><strong>Internet:</strong> required for optional Google Drive backup, AI insight generation, advertising (free tier), and analytics.</li>
@@ -151,7 +153,9 @@ export default function SanctuaryPrivacyPolicy() {
           <p>You can enable or disable reminder notifications at any time in Settings.</p>
           <p><strong>11.3 Revoke Google Drive Access</strong></p>
           <p>You can disconnect Sanctuary&apos;s access to your Google Drive at any time from your Google Account&apos;s third-party access settings (myaccount.google.com/permissions).</p>
-          <p><strong>11.4 Delete Your Data</strong></p>
+          <p><strong>11.4 Turn Off AI Features</strong></p>
+          <p>You can turn AI mood tags and AI Recommendations on or off at any time in <strong>Profile &gt; Privacy &gt; AI Mood Tags &amp; Insights</strong>. When off, no journal text is sent to OpenAI.</p>
+          <p><strong>11.5 Delete Your Data</strong></p>
           <ul>
             <li><strong>On-device:</strong> Use &quot;Delete All Data&quot; in Profile &gt; Account to permanently erase your entries, streaks, and settings from your device.</li>
             <li><strong>Drive backup:</strong> If you&apos;ve enabled Google Drive backup, you can also delete the backup file directly from your Google Drive.</li>
@@ -159,9 +163,9 @@ export default function SanctuaryPrivacyPolicy() {
           <div className={s.highlightBox}>
             <p><strong>Note:</strong> Because Sanctuary has no server-side account or database, deleting the App — or using &quot;Delete All Data&quot; — removes your journal completely on our end. There is no remote copy for us to delete, because none exists.</p>
           </div>
-          <p><strong>11.5 For EU/EEA Residents (GDPR)</strong></p>
+          <p><strong>11.6 For EU/EEA Residents (GDPR)</strong></p>
           <p>If you are located in the European Union or European Economic Area, you have rights under the General Data Protection Regulation (GDPR), including the right to access, rectify, erase, restrict processing, data portability, and to object to certain processing of the limited data described in Section 2. You also have the right to lodge a complaint with a supervisory authority.</p>
-          <p><strong>11.6 For California Residents (CCPA/CPRA)</strong></p>
+          <p><strong>11.7 For California Residents (CCPA/CPRA)</strong></p>
           <p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), including the right to know what personal information is collected, the right to request deletion, and the right to opt out of the sale or sharing of personal information. We do not sell personal information.</p>
           <p>To exercise your privacy rights, contact us at <a href="mailto:support@appaxislab.com">support@appaxislab.com</a>. We aim to respond within 30 days.</p>
 
