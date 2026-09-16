@@ -288,4 +288,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/odometer_privacy',
   },
+  {
+    id: '24',
+    title: 'Notch Mate',
+    category: 'Utilities',
+    filterCategory: 'utilities apps',
+    desc: 'A notch gesture launcher that turns your phone\'s camera cutout into a gesture pad — tap, double-tap, long-press, or swipe to fire system actions, hardware toggles, media controls, silent capture, app launching, and floating tools.',
+    img: '/image/logo.png',
+    features: ['Notch Gesture Pad (Tap, Swipe, Long-Press)', 'Silent Photo, Video & Audio Capture', 'Per-App Safeguards & Rule Overrides', 'On-Device Automations, No Account Needed'],
+    tech: ['Kotlin', 'Android SDK', 'RevenueCat', 'Firebase'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/notch_mate_privacy',
+  },
 ]
