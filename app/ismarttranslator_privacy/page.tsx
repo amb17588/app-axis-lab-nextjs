@@ -11,7 +11,7 @@ export default function ISmartTranslatorPrivacy() {
     <PrivacyLayout
       appName="ISmart Translator Voice and Text"
       subtitle="Privacy Policy & End User License Agreement"
-      lastUpdated="Privacy Policy last updated: April 14, 2026 · EULA last updated: June 3, 2026"
+      lastUpdated="Privacy Policy last updated: September 25, 2026 · EULA last updated: June 3, 2026"
     >
       <div className={s.card}>
         <div className={s.privacyContent}>
@@ -68,7 +68,33 @@ export default function ISmartTranslatorPrivacy() {
           <ul>
             <li><strong>Microphone:</strong> For voice translation. Not stored.</li>
             <li><strong>Internet:</strong> Required for translation and ads.</li>
+            <li><strong>Camera:</strong> Used only when you choose to translate text from a photo. Images are used to recognize and translate text and are not stored or shared for any other purpose.</li>
+            <li><strong>Storage / Photos:</strong> Used only when you choose to select an existing image for photo translation or save a scanned document.</li>
+            <li><strong>Display Over Other Apps:</strong> Used only by the optional Screen Translator feature (see below) to show its floating translator button above other apps.</li>
+            <li><strong>Accessibility Service:</strong> Used only by the optional Screen Translator feature (see below) to read text you tap on in other apps, so it can be translated. Described in full detail below.</li>
+            <li><strong>Notifications:</strong> Shows the persistent notification Android requires while the optional Screen Translator floating button is running.</li>
           </ul>
+
+          <p><strong>Screen Translator (Accessibility Service)</strong></p>
+          <p>
+            ISmart Translator includes an optional, <strong>off-by-default</strong> feature called Screen Translator, which lets you translate text visible on your screen in any other app without switching apps. To do this, it uses Android&apos;s Accessibility Service — the only Android API that lets an app read on-screen text from another app, which is why it is required for this specific feature.
+          </p>
+          <p>When you enable Screen Translator and tap the floating button on a word or sentence, the app:</p>
+          <ul>
+            <li>Reads only the on-screen text near the point you tapped — nothing else, and only at that moment. It does not scan or read your screen continuously or in the background.</li>
+            <li>Sends that text only to our translation provider, solely to generate your translation.</li>
+            <li>Never stores, records, logs, or shares this text for any other purpose.</li>
+          </ul>
+          <p>Screen Translator and the Accessibility Service it uses will never:</p>
+          <ul>
+            <li>Change your device or app settings, or prevent you from disabling or uninstalling any app;</li>
+            <li>Bypass or interfere with Android&apos;s built-in privacy controls or notifications;</li>
+            <li>Record call audio, or any audio at all;</li>
+            <li>Take any action on your behalf in other apps.</li>
+          </ul>
+          <p>
+            This feature is entirely optional and disabled by default. Enabling it requires you to explicitly grant the Accessibility permission through Android Settings, after reviewing an in-app explanation of what the permission is used for. You can revoke this permission at any time from Android Settings &gt; Accessibility, which immediately turns the feature off.
+          </p>
 
           <h2>4. Advertising (Google AdMob)</h2>
           <p>We use Google AdMob to display ads. AdMob may collect and use:</p>
@@ -151,7 +177,7 @@ export default function ISmartTranslatorPrivacy() {
           <p>Translation results may be generated using automated systems, artificial intelligence, or third-party translation services. Translation accuracy is not guaranteed and users should independently verify important information.</p>
 
           <h2>6. Permissions &amp; Device Access</h2>
-          <p>The App may request access to your device microphone (for voice translation) and network connectivity. You may deny permissions, but certain features may not function. Use of permissions is described in our Privacy Policy above.</p>
+          <p>The App may request access to your device microphone (for voice translation), camera and photos (for photo translation), network connectivity, and, only for the optional Screen Translator feature, permission to display over other apps and Android&apos;s Accessibility Service. You may deny any permission, but the related feature may not function; Screen Translator itself remains off by default until you explicitly grant it. Use of each permission is described in full in our Privacy Policy above.</p>
 
           <h2>7. Third-Party Services &amp; Advertising</h2>
           <p>The App may integrate third-party services, including translation APIs, analytics, and advertising networks (such as Google AdMob and other ad partners listed in our Privacy Policy). These services are governed by their own terms and privacy policies. We are not responsible for third-party services, content, or practices. The App may display advertisements. Ad partners may collect device and usage data as described in our Privacy Policy.</p>
