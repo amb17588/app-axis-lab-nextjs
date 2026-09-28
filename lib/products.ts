@@ -300,4 +300,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/notch_mate_privacy',
   },
+  {
+    id: '25',
+    title: 'TV Remote',
+    category: 'Utilities',
+    filterCategory: 'utilities apps',
+    desc: 'A remote control for Android TV and Google TV that pairs securely over your Wi-Fi network — full D-pad, volume, channel, keyboard input, and app launching, with no cloud server involved.',
+    img: '/image/logo.png',
+    features: ['Android TV / Google TV Discovery & Pairing', 'Full D-Pad, Volume & Number Controls', 'On-Screen Keyboard Text Input', 'Encrypted Local Network Connection, No Account Needed'],
+    tech: ['Kotlin', 'Android SDK', 'Android TV Remote Protocol'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/tvremote_privacy',
+  },
 ]
