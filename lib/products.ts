@@ -312,4 +312,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/tvremote_privacy',
   },
+  {
+    id: '26',
+    title: 'Speaker Cleaner',
+    category: 'Utilities',
+    filterCategory: 'utilities apps',
+    desc: 'A speaker-cleaning utility that plays sound tones and vibration to help push water and dust out of your phone\'s speaker — with speaker and headphone tests, cleaning reminders, and optional rain alerts.',
+    img: '/image/logo.png',
+    features: ['Water & Dust Removal Tones with Vibration', 'Speaker, Headphone & Tone Generator Tests', 'Daily Cleaning Reminders & Rain Alerts', 'No Account Needed, Settings Stay on Device'],
+    tech: ['Kotlin', 'Android SDK', 'Swift', 'AdMob'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/speaker_cleaner_privacy',
+  },
 ]

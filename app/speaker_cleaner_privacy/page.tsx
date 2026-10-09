@@ -1,0 +1,501 @@
+import type { Metadata } from 'next'
+import PrivacyLayout from '@/components/PrivacyLayout'
+import s from '@/styles/privacy.module.css'
+
+export const metadata: Metadata = {
+  title: 'Speaker Cleaner — Privacy Policy & EULA | App Axis Lab',
+}
+
+export default function SpeakerCleanerPrivacy() {
+  return (
+    <PrivacyLayout
+      appName="Speaker Cleaner"
+      subtitle="Remove Water & Dust — Privacy Policy & End User License Agreement"
+      lastUpdated="Last updated: October 9, 2026"
+    >
+      <div className={s.card}>
+        <div className={s.privacyContent}>
+          <p>
+            This page contains the <a href="#privacy">Privacy Policy</a> and{' '}
+            <a href="#eula">End User License Agreement (EULA)</a> for Speaker Cleaner. By
+            downloading, installing, or using the App, you agree to both documents.
+          </p>
+
+          <h1 id="privacy">Privacy Policy</h1>
+
+          <h2>Scope</h2>
+          <p>
+            Welcome to Speaker Cleaner&apos;s Privacy Policy. Your privacy is important to us. This
+            Privacy Policy explains how App Axis Lab (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) collects, uses,
+            stores, and shares your information when you use our speaker-cleaning mobile
+            application (the &quot;App&quot; or &quot;Services&quot;).
+          </p>
+          <p>If you do not agree with this Privacy Policy, please do not use our Services.</p>
+
+          <h2>Overview</h2>
+          <p>
+            Speaker Cleaner plays sound tones and vibrations through your phone&apos;s speaker to help
+            push out water and dust. It also offers speaker and headphone tests, cleaning tips,
+            daily cleaning reminders, and optional rainy-weather alerts. No account is required.
+            Your settings are stored locally on your device. We do not sell your personal
+            information.
+          </p>
+          <div className={s.highlightBox}>
+            <ul>
+              <li><strong>No account is required</strong> — Speaker Cleaner works without sign-in, email, or any user profile.</li>
+              <li><strong>Settings stay on your device</strong> — your language, reminder schedule, and rain-alert preferences are stored locally and never transmitted to our servers.</li>
+              <li><strong>The App never records audio</strong> — the microphone is never used to listen to or record anything.</li>
+              <li><strong>Location is optional and approximate</strong> — it is used only for Rain Alerts, only while the App is open, and is rounded to about 1 km before a weather forecast is requested.</li>
+              <li><strong>Ads are served by Google AdMob</strong> — Speaker Cleaner displays native ads. Google may collect certain data as described in Section 8.</li>
+              <li><strong>We never sell your personal information.</strong></li>
+            </ul>
+          </div>
+
+          <h2>1. What Speaker Cleaner Does</h2>
+          <p>
+            Speaker Cleaner is a speaker-cleaning utility for Android and iOS. It generates sound
+            tones on your device and plays them, optionally together with vibration, through your
+            phone&apos;s loudspeaker or earpiece to help push water and dust out of the speaker grille.
+            It also includes a stereo speaker test, a headphone test, a tone generator, cleaning
+            tips, daily cleaning reminders, and optional alerts when rain is forecast near you.
+          </p>
+          <p>
+            The App is <strong>not</strong> a repair tool and does not guarantee the removal of
+            water or dust or the restoration of a damaged speaker. It is a cleaning aid only.
+          </p>
+
+          <h2>2. Information We Collect</h2>
+          <div className={s.highlightBox}>
+            <p>
+              <strong>Speaker Cleaner does not operate its own servers and does not transmit your settings or usage to us.</strong>{' '}
+              All data the App creates stays on your device, except for the approximate location
+              sent to the weather service (Section 2.2) and interactions with Google AdMob as
+              described in Section 8.
+            </p>
+          </div>
+
+          <p><strong>2.1 App Settings</strong></p>
+          <p>
+            Your chosen preferences — app language, whether onboarding has been completed,
+            cleaning reminder days and time, rain-alert preferences (timing, frequency, sound),
+            and a short log of rain alerts already scheduled (so the same rain is not announced
+            twice) — are stored locally on your device. They are never transmitted to us.
+          </p>
+
+          <p><strong>2.2 Approximate Location (Rain Alerts only)</strong></p>
+          <p>
+            If you turn on Rain Alerts and grant location permission, the App reads your
+            device&apos;s <strong>approximate</strong> position when you open the App. It then:
+          </p>
+          <ul>
+            <li><strong>Rounds the coordinates</strong> to two decimal places (about 1 km), so a precise location is never sent.</li>
+            <li>
+              <strong>Requests an hourly rain forecast</strong> for that rounded position from{' '}
+              <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a>, a
+              free weather service. No account, API key, or identifier of yours is included in the request.
+            </li>
+          </ul>
+          <p>
+            Your location is used <strong>in memory only</strong> to fetch the forecast. We do not
+            store, log, or share your location, and the App never accesses your location in the
+            background. If Rain Alerts are turned off, the App does not access your location at all.
+          </p>
+
+          <p><strong>2.3 Generated Sounds</strong></p>
+          <p>
+            The cleaning and test tones are generated on your device and temporarily saved as
+            audio files in the App&apos;s private cache so they can be played. They contain no
+            personal data.
+          </p>
+
+          <p><strong>2.4 Billing Information</strong></p>
+          <p>
+            If you purchase a premium subscription or in-app purchase (when available), payment
+            is processed by the Google Play Store or Apple App Store. We do not directly collect
+            or store your payment card details. We may receive subscription status and anonymous
+            purchase identifiers to unlock premium features.
+          </p>
+
+          <h2>3. How We Use Your Information</h2>
+          <p>We use the information described above to:</p>
+          <ul>
+            <li>Play cleaning tones and vibration patterns, and run the speaker, headphone, and tone tests</li>
+            <li>Show the App in your chosen language</li>
+            <li>Schedule daily cleaning reminders on the days and at the time you choose</li>
+            <li>Check the rain forecast near you and schedule rain alerts, if you turn Rain Alerts on</li>
+            <li>Remember your preferences between sessions</li>
+            <li>Process and manage premium purchases through the app stores</li>
+          </ul>
+          <p>
+            We do <strong>not</strong> use location, settings, or any other on-device data for
+            advertising profiling, analytics, or automated decision-making.
+          </p>
+
+          <h2>4. How We Share Your Information</h2>
+          <p>
+            We do not share your personal information with third parties, except as described in
+            Section 2.2 (approximate location sent to Open-Meteo for the rain forecast), Section 7
+            (app store payments), and Section 8 (Google AdMob). We do not sell your personal
+            information.
+          </p>
+
+          <h2>5. Permissions</h2>
+          <p>Speaker Cleaner requests the following permissions:</p>
+          <ul>
+            <li><strong>Approximate Location (ACCESS_COARSE_LOCATION — Android; &quot;While Using the App&quot; — iOS):</strong> Used only for Rain Alerts, to fetch the rain forecast near you. The App does not request precise or background location. You may deny this; Rain Alerts will not work, but every other feature will.</li>
+            <li><strong>Post Notifications (POST_NOTIFICATIONS — Android 13+; Notifications — iOS):</strong> Used to show daily cleaning reminders and rain alerts. You may deny this; reminders and alerts will not be shown.</li>
+            <li><strong>Vibrate (VIBRATE):</strong> Used by the vibration cleaning modes, which combine sound with vibration to help loosen water and dust.</li>
+            <li><strong>Modify Audio Settings (MODIFY_AUDIO_SETTINGS — Android):</strong> Used to route cleaning tones to the loudspeaker or the earpiece.</li>
+            <li><strong>Microphone (iOS only):</strong> iOS requires this permission to play sound through the earpiece (the &quot;Ear&quot; option). <strong>Speaker Cleaner never records or listens to audio.</strong> The App does not request microphone access on Android.</li>
+            <li><strong>Internet (INTERNET):</strong> Used to fetch the rain forecast and to load ads.</li>
+            <li><strong>Billing (com.android.vending.BILLING — Android):</strong> Used to offer premium purchases through Google Play.</li>
+          </ul>
+
+          <h2>6. Reminders &amp; Rain Alert Notifications</h2>
+          <p>
+            Daily cleaning reminders and rain alerts are <strong>local notifications</strong>{' '}
+            scheduled on your device. They are not sent from our servers and contain no personal
+            data. The rain forecast is refreshed only when you open the App; there is no
+            background refresh. You can turn reminders and alerts off at any time in the
+            App&apos;s Settings.
+          </p>
+
+          <h2>7. Subscriptions &amp; Payments</h2>
+          <p>
+            Speaker Cleaner may offer a premium subscription or in-app purchases to unlock
+            additional features, such as an ad-free experience. When you purchase:
+          </p>
+          <ul>
+            <li>Payments are processed by the Google Play Store or Apple App Store. We do not directly collect or store your payment card details.</li>
+            <li>We receive subscription status and related purchase metadata to unlock premium features.</li>
+            <li>Free trials, if offered, convert to paid subscriptions unless cancelled before the trial ends.</li>
+            <li>You can manage or cancel subscriptions through your Google Play account (<em>Google Play &gt; Profile &gt; Payments &amp; subscriptions &gt; Subscriptions</em>) or through your Apple ID settings (<em>Settings &gt; [Your Name] &gt; Subscriptions</em>).</li>
+            <li>Refunds and billing disputes are handled according to <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener noreferrer">Google Play&apos;s refund policy</a> or <a href="https://support.apple.com/en-us/HT204084" target="_blank" rel="noopener noreferrer">Apple&apos;s refund policy</a>.</li>
+          </ul>
+          <p>
+            By subscribing, you confirm that you have read and agree to our{' '}
+            <a href="https://appaxislab.com/speaker_cleaner_privacy#privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and{' '}
+            <a href="https://appaxislab.com/speaker_cleaner_privacy#eula" target="_blank" rel="noopener noreferrer">End User License Agreement (EULA)</a>.
+          </p>
+
+          <h2>8. Third-Party Services — Google AdMob</h2>
+          <p>
+            Speaker Cleaner displays native advertisements served by <strong>Google AdMob</strong>.
+            AdMob may collect and use certain information from your device to serve relevant ads,
+            including:
+          </p>
+          <ul>
+            <li>Device identifiers (advertising ID, device model, OS version)</li>
+            <li>Interaction data (ad impressions, clicks)</li>
+            <li>Coarse location derived from your IP address</li>
+            <li>IP address</li>
+          </ul>
+          <p>
+            This data is collected and processed by Google under their own privacy policy. Where
+            required by law (for example in the EU/EEA and UK), the App asks for your consent
+            through Google&apos;s consent form before ads are requested, and you can change your
+            choice at any time under <em>Settings &gt; Privacy choices</em> in the App. For more
+            information, see{' '}
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google&apos;s Privacy Policy</a> and{' '}
+            <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">How Google uses data when you use our partners&apos; apps</a>.
+          </p>
+
+          <p><strong>8.1 Other Services</strong></p>
+          <ul>
+            <li><strong>Open-Meteo</strong> — provides the rain forecast for Rain Alerts (see Section 2.2 and <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener noreferrer">Open-Meteo&apos;s terms and privacy information</a>).</li>
+            <li><strong>App store review prompt</strong> — if you tell the App that it helped, it may show the native Google Play or Apple App Store rating prompt. Any rating or review you submit is handled by the app store.</li>
+          </ul>
+          <p>No other third-party analytics, crash-reporting, or cloud-storage SDKs are integrated into the App.</p>
+
+          <h2>9. Data Security</h2>
+          <p>
+            Because Speaker Cleaner stores only local data (your settings) and never transmits it
+            to our servers, the attack surface is minimal. Local data is stored in your
+            device&apos;s protected app storage. Location is never persisted, and forecast requests
+            are sent over an encrypted (HTTPS) connection.
+          </p>
+
+          <h2>10. Your Rights &amp; Controls</h2>
+
+          <p><strong>10.1 Access &amp; Control</strong></p>
+          <p>You can view and change all your settings, reminders, and rain-alert preferences directly within the App.</p>
+
+          <p><strong>10.2 Delete Your Data</strong></p>
+          <p>
+            Uninstalling the App permanently removes all locally stored settings and cached
+            sounds from your device. There is no account to delete because no account exists.
+          </p>
+
+          <p><strong>10.3 Location &amp; Notification Permissions</strong></p>
+          <p>
+            You can revoke location or notification permissions at any time through your
+            device&apos;s Settings, or turn off Rain Alerts and reminders in the App. Revoking
+            location disables Rain Alerts only. Revoking notifications stops reminders and rain
+            alerts from being shown.
+          </p>
+
+          <p><strong>10.4 Ad Personalization</strong></p>
+          <p>
+            You can limit ad tracking through your device settings: on Android via{' '}
+            <em>Settings &gt; Privacy &gt; Ads</em>, and on iOS via{' '}
+            <em>Settings &gt; Privacy &amp; Security &gt; Tracking</em>. Where available, you can also
+            update your ad consent under <em>Settings &gt; Privacy choices</em> in the App, and opt
+            out of interest-based advertising through{' '}
+            <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Google Ad Settings</a>.
+          </p>
+
+          <p><strong>10.5 For EU/EEA &amp; UK Residents (GDPR)</strong></p>
+          <p>
+            If you are located in the European Union, European Economic Area, or United Kingdom,
+            you have rights under the GDPR, including rights to access, rectify, erase, restrict,
+            or object to processing of your personal data. Because Speaker Cleaner does not
+            collect personal data on our own servers, most rights are exercised directly on your
+            device. For data processed by Google AdMob, you may contact Google or exercise your
+            rights through Google&apos;s privacy tools. For questions, contact us at{' '}
+            <a href="mailto:support@appaxislab.com">support@appaxislab.com</a>.
+          </p>
+
+          <p><strong>10.6 For California Residents (CCPA/CPRA)</strong></p>
+          <p>
+            If you are a California resident, you have rights under the CCPA and CPRA. Speaker
+            Cleaner does not sell your personal information. We do not collect personal data on
+            our servers. Settings stored locally on your device can be deleted by uninstalling
+            the App. For questions about data processed by Google AdMob, refer to Google&apos;s
+            privacy tools.
+          </p>
+
+          <h2>11. Data Retention</h2>
+          <p>
+            Settings are stored only on your device for as long as the App is installed. Your
+            approximate location is used only for the duration of a forecast request and is not
+            retained. We retain no data on external servers. Uninstalling the App permanently
+            deletes all App data from your device.
+          </p>
+
+          <h2>12. Children&apos;s Privacy</h2>
+          <p>
+            Speaker Cleaner is not intended for users under 13 years of age (or the applicable
+            age of consent in your jurisdiction). We do not knowingly collect personal
+            information from children. Because the App does not collect personal data on our
+            servers, no child data is held by us.
+          </p>
+          <p>
+            If you are a parent or guardian with concerns, please contact us at{' '}
+            <a href="mailto:support@appaxislab.com">support@appaxislab.com</a>.
+          </p>
+
+          <h2>13. Changes to This Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. Changes take effect upon
+            posting, and we will update the &quot;Last updated&quot; date at the top of this page. For
+            material changes that significantly affect your rights, we will provide notice
+            through the App or other appropriate means. We encourage you to review this policy
+            periodically.
+          </p>
+
+          <h2>14. Contact Us</h2>
+          <p>
+            If you have questions, concerns, or requests regarding this Privacy Policy or our
+            data practices, please contact us at:
+          </p>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:support@appaxislab.com">support@appaxislab.com</a></li>
+            <li><strong>Developer:</strong> App Axis Lab</li>
+          </ul>
+
+          <hr />
+
+          <h1 id="eula">End User License Agreement (EULA)</h1>
+          <p>
+            This End User License Agreement (&quot;Agreement&quot;) is a legal agreement between you
+            (&quot;User&quot; or &quot;you&quot;) and App Axis Lab (&quot;Licensor&quot;, &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) for the
+            Speaker Cleaner mobile application (the &quot;App&quot;). By downloading, installing, or using
+            the App, you agree to be bound by this Agreement. If you do not agree, do not
+            download, install, or use the App.
+          </p>
+
+          <h2>1. License Grant</h2>
+          <p>
+            Subject to your compliance with this Agreement, we grant you a limited,
+            non-exclusive, non-transferable, revocable license to install and use the App on
+            devices you own or control, for your personal, non-commercial use, in accordance with
+            this Agreement and applicable app store terms.
+          </p>
+
+          <h2>2. Restrictions</h2>
+          <p>You agree not to:</p>
+          <ul>
+            <li>Copy, modify, adapt, or create derivative works of the App</li>
+            <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App, except where expressly permitted by law</li>
+            <li>Rent, lease, lend, sell, sublicense, or distribute the App or any part of it</li>
+            <li>Remove, alter, or obscure any proprietary notices or labels on the App</li>
+            <li>Use the App for any unlawful purpose or in any way that violates applicable laws or regulations</li>
+            <li>Use the App in a way that disturbs or harms other people or animals, for example by playing loud tones in public places or near someone&apos;s ears</li>
+            <li>Interfere with or disrupt the App or connected systems</li>
+            <li>Use automated systems or bots to access or use the App without our written consent</li>
+          </ul>
+
+          <h2>3. Intellectual Property</h2>
+          <p>
+            The App, including its design, trademarks, software, and content, is owned by App
+            Axis Lab or its licensors and is protected by copyright, trademark, and other
+            intellectual property laws. This Agreement does not transfer any ownership rights to
+            you.
+          </p>
+
+          <h2>4. Your Settings</h2>
+          <p>
+            All settings you create in the App are stored locally on your device. You are
+            responsible for maintaining your device&apos;s security. Because no account or cloud sync
+            is involved, we cannot recover your settings if you uninstall the App or lose your
+            device.
+          </p>
+
+          <h2>5. Responsible Use &amp; Hearing Safety</h2>
+          <p>
+            Speaker Cleaner plays tones at high volume and may use vibration.{' '}
+            <strong>Do not hold the phone against your ear or use headphones or earphones while a cleaning tone is playing.</strong>{' '}
+            Keep the volume at a comfortable level during speaker, headphone, and tone tests, and
+            stop immediately if you feel discomfort. Do not leave the App running unattended near
+            children or pets. You are solely responsible for using the App safely.
+          </p>
+
+          <h2>6. Cleaning Results Disclaimer</h2>
+          <p>
+            Results depend on your device, its speaker hardware, and the amount and type of water
+            or dust present. The App cannot repair hardware damage and does not guarantee that
+            water or dust will be removed or that sound quality will be restored. Speaker Cleaner
+            is not a substitute for professional repair or for your device manufacturer&apos;s
+            guidance on water exposure. Rain forecasts are provided by a third-party weather
+            service and may be inaccurate or unavailable.
+          </p>
+
+          <h2>7. Permissions &amp; Device Access</h2>
+          <p>
+            The App requests access to approximate location (for Rain Alerts, while the App is in
+            use only), notifications, vibration, audio routing, and — on iOS only — the
+            microphone (required by iOS for earpiece playback; the App never records audio) to
+            support the features described in our <a href="#privacy">Privacy Policy</a>. You may
+            deny certain permissions, but related features may not function.
+          </p>
+
+          <h2>8. Advertising</h2>
+          <p>
+            Speaker Cleaner displays ads served by Google AdMob. By using the App, you agree that
+            ads may be displayed and that Google may collect certain data as described in Section
+            8 of our Privacy Policy and in{' '}
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google&apos;s Privacy Policy</a>.
+          </p>
+
+          <h2>9. Subscriptions &amp; In-App Purchases</h2>
+          <p>
+            Speaker Cleaner may offer a premium subscription or in-app purchases to unlock
+            additional features. Payment and billing are processed by the Google Play Store or
+            Apple App Store. Refunds and billing disputes are handled according to the applicable
+            store&apos;s policies. We do not store your full payment card details.
+          </p>
+          <p>
+            Free trials, if offered, convert to paid subscriptions unless cancelled before the
+            trial ends, in accordance with the applicable store&apos;s rules.
+          </p>
+          <p>
+            By subscribing, you confirm that you have read and agree to our{' '}
+            <a href="https://appaxislab.com/speaker_cleaner_privacy#privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and{' '}
+            <a href="https://appaxislab.com/speaker_cleaner_privacy#eula" target="_blank" rel="noopener noreferrer">End User License Agreement (EULA)</a>.
+          </p>
+
+          <h2>10. Disclaimer of Warranties</h2>
+          <p>
+            THE APP IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND,
+            WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING IMPLIED WARRANTIES OF
+            MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO
+            NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE. WE DO NOT
+            WARRANT THAT THE APP WILL REMOVE WATER OR DUST FROM YOUR DEVICE OR RESTORE ITS SPEAKER
+            PERFORMANCE. RAIN FORECASTS AND ALERTS ARE ESTIMATES FROM A THIRD-PARTY SERVICE AND
+            MAY NOT BE ACCURATE.
+          </p>
+
+          <h2>11. Limitation of Liability</h2>
+          <p>
+            TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, APP AXIS LAB AND ITS AFFILIATES,
+            OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT,
+            INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA,
+            OR GOODWILL, ARISING OUT OF OR RELATED TO YOUR USE OF OR INABILITY TO USE THE APP,
+            INCLUDING ANY DAMAGE TO YOUR DEVICE OR ITS SPEAKERS, OR ANY HEARING DISCOMFORT OR
+            INJURY RESULTING FROM MISUSE OF THE APP.
+          </p>
+          <p>
+            OUR TOTAL LIABILITY FOR ANY CLAIM ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE
+            APP SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID US FOR THE APP IN THE
+            TWELVE (12) MONTHS BEFORE THE CLAIM, OR (B) FIFTY U.S. DOLLARS (USD $50), WHERE
+            PERMITTED BY LAW.
+          </p>
+
+          <h2>12. Indemnification</h2>
+          <p>
+            You agree to indemnify and hold harmless App Axis Lab from any claims, damages,
+            losses, liabilities, and expenses (including reasonable legal fees) arising from your
+            use of the App or your violation of this Agreement or applicable law.
+          </p>
+
+          <h2>13. Termination</h2>
+          <p>
+            This license is effective until terminated. We may suspend or terminate your access
+            to the App at any time if you breach this Agreement. Upon termination, you must cease
+            all use of the App and delete all copies from your devices. You may terminate at any
+            time by uninstalling the App. Sections that by their nature should survive
+            termination will survive.
+          </p>
+
+          <h2>14. Changes to This Agreement</h2>
+          <p>
+            We may update this EULA from time to time. Continued use of the App after changes
+            become effective constitutes acceptance of the revised Agreement. The &quot;Last
+            updated&quot; date at the top of this page will reflect material revisions.
+          </p>
+
+          <h2>15. Governing Law &amp; Disputes</h2>
+          <p>
+            This Agreement is governed by the laws of the jurisdiction in which App Axis Lab
+            operates, without regard to conflict-of-law principles, except where mandatory
+            consumer protection laws in your country provide otherwise. Any dispute shall be
+            resolved in the courts of that jurisdiction, unless applicable law requires a
+            different forum.
+          </p>
+
+          <h2>16. Children</h2>
+          <p>
+            The App is not intended for children under 13 years of age (or the applicable age of
+            consent in your jurisdiction). We do not knowingly collect personal information from
+            children as described in our Privacy Policy.
+          </p>
+
+          <h2>17. App Stores (Google &amp; Apple)</h2>
+          <p>
+            If you obtained the App through Google Play, you agree that Google is not a party to
+            this Agreement and has no responsibility or liability with respect to the App. Your
+            use of Google Play is subject to Google&apos;s terms of service. If you obtained the App
+            through the Apple App Store, Apple is not a party to this Agreement and has no
+            responsibility for the App or its content. Apple has no obligation to provide
+            maintenance or support for the App. Your use of the App Store is subject to Apple&apos;s
+            terms of service.
+          </p>
+
+          <h2>18. Severability &amp; Entire Agreement</h2>
+          <p>
+            If any provision of this Agreement is held invalid or unenforceable, the remaining
+            provisions remain in full force. This Agreement, together with our Privacy Policy,
+            constitutes the entire agreement between you and App Axis Lab regarding the App and
+            supersedes prior understandings on the same subject.
+          </p>
+
+          <h2>19. Contact</h2>
+          <p>
+            For questions about this EULA, contact App Axis Lab at{' '}
+            <a href="mailto:support@appaxislab.com">support@appaxislab.com</a>.
+          </p>
+        </div>
+      </div>
+    </PrivacyLayout>
+  )
+}
