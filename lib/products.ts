@@ -324,4 +324,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/speaker_cleaner_privacy',
   },
+  {
+    id: '27',
+    title: 'GPS Camera',
+    category: 'Photography & Maps',
+    filterCategory: 'utilities apps',
+    desc: 'A GPS camera that stamps photos and videos with coordinates, address, altitude, speed, and compass bearing — plus maps, route navigation, area measurement, nearby places, live traffic, and air quality in one app.',
+    img: '/image/logo.png',
+    features: ['Geotagged Photo & Video Stamps', 'Routes, Voice Map & Live Traffic', 'Area Measurement & Nearby Places', 'No Account Needed, Data Stays on Device'],
+    tech: ['Kotlin', 'Android SDK', 'Swift', 'Google Maps', 'AdMob'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/gps_camera_privacy',
+  },
 ]
