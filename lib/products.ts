@@ -336,4 +336,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/gps_camera_privacy',
   },
+  {
+    id: '28',
+    title: 'LingoLab: AI Language Tutor',
+    category: 'Education',
+    filterCategory: 'apps',
+    desc: 'An AI language tutor with speaking practice, lessons, quizzes, translation, and chat — speech is converted to text on-device, progress stays on your device, and no account is needed.',
+    img: '/image/logo.png',
+    features: ['Speaking Practice & Pronunciation Feedback', 'Chat with an AI Tutor & Translate', 'Lessons, Quizzes & Daily Missions', 'No Account Needed, Progress Stays on Device'],
+    tech: ['Kotlin', 'Android SDK', 'Swift', 'OpenAI', 'Firebase', 'RevenueCat', 'AdMob'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/lingolab_privacy',
+  },
 ]
