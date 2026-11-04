@@ -1,81 +1,67 @@
-'use client'
-import { useEffect, useRef } from 'react'
+import { Compass, Hammer, RocketLaunch } from '@phosphor-icons/react/dist/ssr'
 
-const steps = [
+const phases = [
   {
     number: '01',
-    title: 'Discover',
-    description: 'We analyze your market, users, and competition to identify winning opportunities.',
+    icon: Compass,
+    title: 'Discover and design',
+    items: [
+      { name: 'Discover', text: 'We study your market, users, and competitors to find the opening worth building for.' },
+      { name: 'Design', text: 'Flows and interfaces are mapped and refined before a single line of code ships.' },
+    ],
   },
   {
     number: '02',
-    title: 'Design',
-    description: 'Pixel-perfect UI/UX design that delights users and drives engagement.',
+    icon: Hammer,
+    title: 'Build and test',
+    items: [
+      { name: 'Develop', text: 'Clean, maintainable code in Kotlin, Swift, React Native, or Flutter, matched to your product.' },
+      { name: 'Test', text: 'QA across devices and OS versions so the build is solid before it reaches the store.' },
+    ],
   },
   {
     number: '03',
-    title: 'Develop',
-    description: 'Clean, maintainable code built with the latest technologies and best practices.',
-  },
-  {
-    number: '04',
-    title: 'Test',
-    description: 'Comprehensive QA across devices and platforms to ensure flawless performance.',
-  },
-  {
-    number: '05',
-    title: 'Launch',
-    description: 'Smooth deployment to app stores with ASO optimization and launch strategy.',
-  },
-  {
-    number: '06',
-    title: 'Scale',
-    description: 'Continuous improvements, analytics-driven updates, and growth optimization.',
+    icon: RocketLaunch,
+    title: 'Launch and scale',
+    items: [
+      { name: 'Launch', text: 'Store submission, listing copy, and app store optimization, planned with you.' },
+      { name: 'Scale', text: 'Analytics driven updates and steady improvements as your audience grows.' },
+    ],
   },
 ]
 
 export default function Process() {
-  const ref = useRef<HTMLElement>(null)
-
-  useEffect(() => {
-    let cleanup: (() => void) | undefined
-    ;(async () => {
-      const gsap = (await import('gsap')).default
-      const { ScrollTrigger } = await import('gsap/ScrollTrigger')
-      gsap.registerPlugin(ScrollTrigger)
-
-      gsap.from(ref.current?.querySelectorAll('.timeline-item') ?? [], {
-        opacity: 0,
-        x: -40,
-        duration: 0.6,
-        stagger: 0.2,
-        ease: 'power2.out',
-        scrollTrigger: { trigger: ref.current, start: 'top 75%', once: true },
-      })
-
-      cleanup = () => ScrollTrigger.getAll().forEach((t) => t.kill())
-    })()
-    return () => cleanup?.()
-  }, [])
-
   return (
-    <section id="process" className="process section-padding" ref={ref}>
+    <section id="process" className="section" aria-labelledby="process-title">
       <div className="container">
-        <div className="section-header">
-          <h2>Our Process</h2>
-          <p>A proven methodology that takes your idea from concept to a market-leading product.</p>
+        <div className="section-header reveal" data-reveal>
+          <span className="eyebrow caption-4">How it works</span>
+          <h2 id="process-title" className="heading-2">From idea to live app in three phases</h2>
+          <p className="body-3">
+            A clear process, so you always know what is happening and what comes next.
+          </p>
         </div>
-        <div className="timeline">
-          <div className="timeline-line" />
-          {steps.map((s) => (
-            <div key={s.number} className="timeline-item">
-              <div className="timeline-dot" />
-              <div className="timeline-content glass-card">
-                <h3>{s.number}. {s.title}</h3>
-                <p>{s.description}</p>
-              </div>
-            </div>
-          ))}
+        <div className="steps-grid">
+          {phases.map((p, i) => {
+            const Icon = p.icon
+            return (
+              <article className="step reveal" data-reveal style={{ ['--d' as string]: `${i * 100}ms` }} key={p.number}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <span className="step-num title-4">Phase {p.number}</span>
+                  <span className="benefit-icon" style={{ marginBottom: 0 }}><Icon size={22} weight="duotone" aria-hidden="true" /></span>
+                </div>
+                <h3 className="heading-5">{p.title}</h3>
+                <ul className="step-list">
+                  {p.items.map((it) => (
+                    <li key={it.name}>
+                      <strong className="title-3">{it.name}</strong>
+                      <span className="body-6" style={{ color: 'var(--text-muted)' }}>{it.text}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            )
+          })}
         </div>
       </div>
     </section>

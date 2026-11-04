@@ -1,82 +1,52 @@
-'use client'
-import { useEffect, useRef } from 'react'
-import { Rocket, Star } from 'lucide-react'
+import { ArrowRight, DownloadSimple, GooglePlayLogo } from '@phosphor-icons/react/dist/ssr'
 
 export default function Hero() {
-  const ref = useRef<HTMLElement>(null)
-
-  useEffect(() => {
-    let ctx: { revert: () => void } | undefined
-    ;(async () => {
-      const gsap = (await import('gsap')).default
-      ctx = gsap.context(() => {
-        const tl = gsap.timeline()
-        tl.from('.hero-title',    { y: 50, opacity: 0, duration: 1,   ease: 'power3.out' })
-          .from('.hero-subtitle', { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out' }, '-=0.6')
-          .from('.hero-cta',      { y: 20, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.4')
-          .from('.mockup-wrapper',{ scale: 0.9, opacity: 0, duration: 1, ease: 'power3.out' }, '-=0.8')
-          .from('.floating-card', { x: 30, opacity: 0, duration: 0.8, stagger: 0.2, ease: 'back.out(1.7)' }, '-=0.5')
-      }, ref)
-    })()
-    return () => ctx?.revert()
-  }, [])
-
-  const scrollTo = (id: string) => {
-    const el = document.querySelector(id)
-    if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - 80, behavior: 'smooth' })
-  }
-
   return (
-    <section className="hero" id="home" ref={ref}>
-      <div className="hero-bg-glow" />
-      <div className="container hero-container">
-        <div className="hero-content">
-          <h1 className="hero-title">
-            Building Apps That <br />
-            <span>Millions Love</span>
+    <section className="hero" id="home" aria-labelledby="hero-title">
+      <div className="container hero-grid">
+        <div className="hero-copy">
+          <span className="eyebrow caption-4 rise" style={{ ['--i' as string]: 0 }}>
+            Product studio for Android and iOS
+          </span>
+          <h1 id="hero-title" className="heading-1 hero-title gradient-text rise" style={{ ['--i' as string]: 1 }}>
+            We make apps<br />
+            <span className="scribble">that people truly love.</span>
           </h1>
-          <p className="hero-subtitle">
-            We design, develop, and scale mobile applications that combine exceptional user experience with business growth.
+          <p className="hero-sub body-3 rise" style={{ ['--i' as string]: 2 }}>
+            AppAxisLab designs, builds, and launches mobile apps for founders and brands, from the first sketch to the store listing and every update after.
           </p>
-          <div className="hero-cta">
-            <a
-              href="#portfolio"
-              className="btn btn-primary"
-              onClick={(e) => { e.preventDefault(); scrollTo('#portfolio') }}
-            >
-              View Portfolio
+          <div className="hero-actions rise" style={{ ['--i' as string]: 3 }}>
+            <a href="#contact" className="btn btn-primary button-md">
+              Start your project
+              <ArrowRight size={18} weight="bold" className="btn-icon" />
             </a>
-            <a
-              href="#contact"
-              className="btn btn-secondary btn-outline"
-              onClick={(e) => { e.preventDefault(); scrollTo('#contact') }}
-            >
-              Contact Us
+            <a href="#portfolio" className="btn btn-ghost button-md">
+              See our apps
             </a>
           </div>
+          <p className="hero-proof body-5 rise" style={{ ['--i' as string]: 4 }}>
+            <span className="proof-icon"><DownloadSimple size={18} weight="bold" /></span>
+            <span><strong>10M+ downloads</strong> across 500+ delivered products</span>
+          </p>
         </div>
+
         <div className="hero-visual">
-          <div className="mockup-wrapper">
+          <span className="deco deco-sun" aria-hidden="true" />
+          <span className="deco deco-square" aria-hidden="true" />
+          <span className="deco deco-pill" aria-hidden="true" />
+          <div className="hero-frame rise" style={{ ['--i' as string]: 3 }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/assets/hero_app_mockup_1781618273028.png"
-              alt="Premium App Mockup"
-              className="hero-mockup"
+              alt="A finance app dashboard on a phone, showing portfolio value, a growth chart, and recent transactions"
+              width={1024}
+              height={1024}
+              fetchPriority="high"
             />
-            <div className="floating-card card-1">
-              <span className="icon"><Rocket size={22} /></span>
-              <div>
-                <p className="card-title">Performance</p>
-                <p className="card-value">99.9% Uptime</p>
-              </div>
-            </div>
-            <div className="floating-card card-2">
-              <span className="icon"><Star size={22} /></span>
-              <div>
-                <p className="card-title">User Rating</p>
-                <p className="card-value">4.9 / 5.0</p>
-              </div>
-            </div>
+            <span className="hero-chip caption-3">
+              <GooglePlayLogo size={16} weight="fill" />
+              Live on Google Play
+            </span>
           </div>
         </div>
       </div>
