@@ -2,56 +2,58 @@
 import { useEffect, useRef } from 'react'
 
 const stats = [
-  { target: 500, suffix: '+',  label: 'Products Delivered' },
-  { target: 10,  suffix: 'M+', label: 'Downloads Generated' },
-  { target: 100, suffix: '+',  label: 'Clients Served' },
-  { target: 10,  suffix: '+',  label: 'Years Experience' },
+  { target: 500, suffix: '+', label: 'Products delivered' },
+  { target: 10, suffix: 'M+', label: 'Downloads generated' },
+  { target: 100, suffix: '+', label: 'Clients served' },
+  { target: 10, suffix: '+', label: 'Years of experience' },
 ]
 
+const easeOut = (t: number) => 1 - Math.pow(1 - t, 4)
+
 export default function Stats() {
-  const ref = useRef<HTMLElement>(null)
+  const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    let cleanup: (() => void) | undefined
-    ;(async () => {
-      const gsap = (await import('gsap')).default
-      const { ScrollTrigger } = await import('gsap/ScrollTrigger')
-      gsap.registerPlugin(ScrollTrigger)
+    const root = ref.current
+    if (!root) return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
-      const els = ref.current?.querySelectorAll<HTMLHeadingElement>('.stat-number')
-      els?.forEach((el) => {
+    const els = [...root.querySelectorAll<HTMLElement>('[data-target]')]
+    els.forEach((el) => { el.textContent = '0' })
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return
+        const el = entry.target as HTMLElement
+        io.unobserve(el)
         const target = Number(el.dataset.target)
-        const obj = { val: 0 }
-        ScrollTrigger.create({
-          trigger: el,
-          start: 'top 85%',
-          once: true,
-          onEnter: () => {
-            gsap.to(obj, {
-              val: target,
-              duration: 2,
-              ease: 'power2.out',
-              onUpdate() { el.textContent = String(Math.ceil(obj.val)) },
-            })
-          },
-        })
+        const start = performance.now()
+        const duration = 1600
+        const tick = (now: number) => {
+          const p = Math.min((now - start) / duration, 1)
+          el.textContent = String(Math.round(target * easeOut(p)))
+          if (p < 1) requestAnimationFrame(tick)
+        }
+        requestAnimationFrame(tick)
       })
-
-      cleanup = () => ScrollTrigger.getAll().forEach((t) => t.kill())
-    })()
-    return () => cleanup?.()
+    }, { threshold: 0.6 })
+    els.forEach((el) => io.observe(el))
+    return () => io.disconnect()
   }, [])
 
   return (
-    <section className="stats section-padding" ref={ref}>
-      <div className="container stats-grid">
-        {stats.map((s) => (
-          <div className="stat-item" key={s.label}>
-            <h2 className="stat-number" data-target={s.target}>0</h2>
-            <span>{s.suffix}</span>
-            <p className="stat-label">{s.label}</p>
-          </div>
-        ))}
+    <section className="section" aria-label="Studio numbers" style={{ paddingBottom: "var(--s-700)" }}>
+      <div className="container">
+        <div className="stats-grid" ref={ref}>
+          {stats.map((s, i) => (
+            <div className="stat" data-tone={i} data-reveal style={{ ['--d' as string]: `${i * 60}ms` }} key={s.label}>
+              <p className="stat-value num" style={{ color: 'var(--text)' }}>
+                <span data-target={s.target}>{s.target}</span>{s.suffix}
+              </p>
+              <p className="stat-label body-5">{s.label}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

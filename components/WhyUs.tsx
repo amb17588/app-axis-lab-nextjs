@@ -1,92 +1,58 @@
-'use client'
-import { useEffect, useRef } from 'react'
-import { Smartphone, Zap, Palette, Gauge, ShieldCheck, Users } from 'lucide-react'
+import { DeviceMobile, TreeStructure, PaintBrush, Gauge, LockKey, ArrowsClockwise } from '@phosphor-icons/react/dist/ssr'
 
-const features = [
+const benefits = [
   {
-    icon: Smartphone,
-    title: 'Mobile First',
-    description: 'We prioritize mobile experiences, ensuring your app performs flawlessly across all devices and platforms.',
+    icon: DeviceMobile,
+    title: 'Designed for thumbs first',
+    description: 'Every screen starts on a small display and is then adapted for tablets, so the main action is always within reach.',
   },
   {
-    icon: Zap,
-    title: 'Scalable Architecture',
-    description: 'Our robust technical foundation scales seamlessly as your user base grows from hundreds to millions.',
+    icon: TreeStructure,
+    title: 'Backends that keep up',
+    description: 'We build on Firebase, Supabase, and AWS so your app can grow from its first users to a large audience without a rewrite.',
   },
   {
-    icon: Palette,
-    title: 'Beautiful UX',
-    description: 'Stunning interfaces that delight users and keep them coming back, with pixel-perfect attention to detail.',
+    icon: PaintBrush,
+    title: 'Interfaces that feel native',
+    description: 'Careful type, spacing, and motion make the app feel at home on Android and iOS, not like a port.',
   },
   {
     icon: Gauge,
-    title: 'Performance Optimized',
-    description: 'Lightning-fast load times and smooth 60fps animations that set your app apart from the competition.',
+    title: 'Smooth on everyday phones',
+    description: 'Screens and animations are tuned to stay responsive on the devices most people actually carry.',
   },
   {
-    icon: ShieldCheck,
-    title: 'Enterprise Quality',
-    description: 'Rigorous testing, security best practices, and code quality standards that enterprises trust.',
+    icon: LockKey,
+    title: 'Private by default',
+    description: 'Many of our apps keep data on the device with no account required, and every published app has its own privacy policy.',
   },
   {
-    icon: Users,
-    title: 'Long Term Support',
-    description: "We're your long-term technology partner, providing ongoing support, updates, and growth strategies.",
+    icon: ArrowsClockwise,
+    title: 'Support after launch',
+    description: 'We keep shipping fixes, updates, and store listing improvements once real users arrive.',
   },
 ]
 
 export default function WhyUs() {
-  const ref = useRef<HTMLElement>(null)
-
-  useEffect(() => {
-    let cleanup: (() => void) | undefined
-    ;(async () => {
-      const gsap = (await import('gsap')).default
-      const { ScrollTrigger } = await import('gsap/ScrollTrigger')
-      gsap.registerPlugin(ScrollTrigger)
-
-      const cards = ref.current?.querySelectorAll('.feature-card') ?? []
-      const triggerConfig = { trigger: ref.current, start: 'top 75%', once: true }
-
-      // All cards slide up in sync so rows stay horizontally aligned
-      gsap.from(cards, {
-        y: 40,
-        duration: 0.7,
-        ease: 'power2.out',
-        scrollTrigger: triggerConfig,
-      })
-      // Opacity staggers independently — gives the cascade feel without shifting rows
-      gsap.from(cards, {
-        opacity: 0,
-        duration: 0.5,
-        stagger: 0.1,
-        ease: 'power2.out',
-        scrollTrigger: triggerConfig,
-      })
-
-      cleanup = () => ScrollTrigger.getAll().forEach((t) => t.kill())
-    })()
-    return () => cleanup?.()
-  }, [])
-
   return (
-    <section id="why-us" className="why-us section-padding" ref={ref}>
+    <section id="why-us" className="section" aria-labelledby="why-title">
       <div className="container">
-        <div className="section-header">
-          <h2>Why AppAxisLab?</h2>
-          <p>We don&apos;t just build apps. We engineer digital experiences that define markets.</p>
+        <div className="section-header reveal" data-reveal>
+          <span className="eyebrow caption-4">Why AppAxisLab</span>
+          <h2 id="why-title" className="heading-2">One team from first sketch to the store</h2>
+          <p className="body-3">
+            Design, engineering, and launch live under one roof, so nothing gets lost in a handoff and your app reaches users faster.
+          </p>
         </div>
-        <div className="features-grid">
-          {features.map((f) => {
-            const Icon = f.icon
+        <div className="benefits-grid">
+          {benefits.map((b, i) => {
+            const Icon = b.icon
             return (
-              <div key={f.title} className="feature-card glass-card">
-                <div className="feature-icon">
-                  <Icon size={26} strokeWidth={1.75} />
-                </div>
-                <h3>{f.title}</h3>
-                <p>{f.description}</p>
-              </div>
+              <article className="benefit reveal" data-reveal style={{ ['--d' as string]: `${(i % 3) * 80}ms` }} key={b.title}>
+                <div className="benefit-icon"><Icon size={22} weight="duotone" aria-hidden="true" /></div>
+                <h3 className="title-1">{b.title}</h3>
+                <p className="body-5">{b.description}</p>
+              </article>
             )
           })}
         </div>
