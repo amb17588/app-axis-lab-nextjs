@@ -348,4 +348,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/lingolab_privacy',
   },
+  {
+    id: '29',
+    title: 'Photos & Videos Recovery',
+    category: 'Utilities',
+    filterCategory: 'apps',
+    desc: 'Scan your device to recover deleted photos, videos, and audio files — all scanning and recovery happens on your device, nothing is uploaded, and no account is needed.',
+    img: '/image/logo.png',
+    features: ['Recover Deleted Photos, Videos & Audio', 'On-Device Scanning, Nothing Uploaded', 'Preview Thumbnails Before Recovering', 'Scan History & No Account Needed'],
+    tech: ['Kotlin', 'Android SDK', 'SQLite', 'Firebase', 'RevenueCat', 'AdMob'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/photo_video_recovery_privacy',
+  },
 ]
