@@ -360,4 +360,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/photo_video_recovery_privacy',
   },
+  {
+    id: '30',
+    title: 'Smart Switch — Phone Clone & Transfer',
+    category: 'Utilities',
+    filterCategory: 'apps',
+    desc: 'Send photos, videos, music, documents, apps, and contacts directly from one Android phone to another over Wi-Fi — encrypted, no account needed, and nothing is uploaded to any server.',
+    img: '/image/logo.png',
+    features: ['Phone-to-Phone Transfer over Wi-Fi', 'Photos, Videos, Apps & Contacts', 'Encrypted, Nothing Uploaded', 'QR/PIN Pairing & Resume Transfers'],
+    tech: ['Kotlin', 'Android SDK', 'Firebase', 'AdMob'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/smart_switch_privacy',
+  },
 ]
