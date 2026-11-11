@@ -372,4 +372,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/smart_switch_privacy',
   },
+  {
+    id: '31',
+    title: 'WiFi Manager — Diagnostics, Security & Sharing',
+    category: 'Utilities',
+    filterCategory: 'apps',
+    desc: 'Run instant speed tests, find Wi-Fi dead zones, share networks via QR code, and get guidance to strengthen your network security — no account needed, and your Wi-Fi data stays on your device.',
+    img: '/image/logo.png',
+    features: ['Speed Tests & Dead-Zone Detection', 'Instant QR Code Wi-Fi Sharing', 'Security & Hotspot Guidance', 'No Account, Data Stays on Device'],
+    tech: ['React Native', 'Expo', 'RevenueCat', 'AdMob'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/wifimanager_privacy',
+  },
 ]
