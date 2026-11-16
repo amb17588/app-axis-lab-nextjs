@@ -103,6 +103,8 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 html {
+  overflow-x: clip;
+  max-width: 100%;
   scroll-behavior: smooth;
   scroll-padding-top: var(--s-900);
   -webkit-text-size-adjust: 100%;
@@ -116,6 +118,8 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   overflow-x: hidden;
+  overflow-x: clip;
+  max-width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -966,8 +970,10 @@ textarea.input { resize: vertical; min-height: 128px; }
 /* ---------- Back to top ---------- */
 .back-to-top {
   position: fixed;
-  right: var(--s-300);
-  bottom: var(--s-300);
+  right: max(var(--s-200), env(safe-area-inset-right));
+  bottom: max(var(--s-200), env(safe-area-inset-bottom));
+  left: auto;
+  max-width: calc(100vw - 2 * var(--s-200));
   z-index: 800;
   display: grid;
   place-items: center;
