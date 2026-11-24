@@ -557,11 +557,11 @@ em, i, cite, address { font-style: normal; }
 @media (min-width: 1024px) { .tagline-star { display: block; right: var(--s-600); } }
 
 /* ---------- Portfolio ---------- */
-.featured-grid { display: grid; grid-template-columns: 1fr; gap: var(--s-500) var(--s-300); }
+.featured-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-500) var(--s-300); }
 @media (min-width: 768px) { .featured-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 /* Wrapper holds the fixed hard shadow, the card above it moves */
-.lift { position: relative; display: flex; --lift-r: var(--r-2xl); }
+.lift { position: relative; display: flex; min-width: 0; max-width: 100%; --lift-r: var(--r-2xl); }
 .lift::before {
   content: '';
   position: absolute;
@@ -570,7 +570,7 @@ em, i, cite, address { font-style: normal; }
   background: var(--ink);
   transform: translate(6px, 6px);
 }
-.lift > button { position: relative; z-index: 1; width: 100%; }
+.lift > button { position: relative; z-index: 1; width: 100%; min-width: 0; max-width: 100%; box-sizing: border-box; }
 
 .app-card {
   --tx: 0px; --ty: 0px; --rx: 0deg; --ry: 0deg;
@@ -678,7 +678,7 @@ em, i, cite, address { font-style: normal; }
 
 .more-title { margin: var(--s-600) 0 var(--s-300); display: flex; align-items: baseline; justify-content: space-between; gap: var(--s-200); }
 .more-title .count { color: var(--ink-subtle); }
-.more-grid { display: grid; grid-template-columns: 1fr; gap: var(--s-200); }
+.more-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-200); padding-right: 6px; padding-bottom: 6px; }
 @media (min-width: 640px) { .more-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 1024px) { .more-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .lift-sm { --lift-r: var(--r-xl); }

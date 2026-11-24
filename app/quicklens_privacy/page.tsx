@@ -1,0 +1,322 @@
+import type { Metadata } from 'next'
+import PrivacyLayout from '@/components/PrivacyLayout'
+import s from '@/styles/privacy.module.css'
+
+export const metadata: Metadata = {
+  title: 'QuickLens: QR & Barcode Reader — Privacy Policy & EULA | App Axis Lab',
+}
+
+export default function QuickLensPrivacy() {
+  return (
+    <PrivacyLayout
+      appName="QuickLens: QR & Barcode Reader"
+      subtitle="Privacy Policy & End User License Agreement"
+      lastUpdated="Last updated: November 24, 2026"
+    >
+      <div className={s.card}>
+        <div className={s.privacyContent}>
+
+    <p>
+      This page contains a short <a href="#about">description of the app</a>, the <a href="#privacy">Privacy Policy</a> and <a href="#eula">End User License Agreement (EULA)</a> for QuickLens: QR &amp; Barcode Reader. By using the App, you agree to both documents.
+    </p>
+
+    <section id="about">
+    <h1>About the App</h1>
+    <p>
+      QuickLens: QR &amp; Barcode Reader is a fast, on-device tool for scanning and creating QR codes. Point your camera at a code to scan it instantly, or generate your own QR codes to share.
+    </p>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li><strong>QR &amp; barcode scanning:</strong> Scan QR codes and common barcodes instantly using your camera.</li>
+      <li><strong>Scan from photo:</strong> Pick an existing image from your photo library to decode a QR code in it.</li>
+      <li><strong>QR code generator:</strong> Create QR codes for links, text, Wi-Fi, contacts and more, and save them to your photo library.</li>
+      <li><strong>Flashlight toggle:</strong> Turn on the camera flash to scan in low light.</li>
+      <li><strong>Scan &amp; generate history:</strong> Keeps a local log of your past scans and created codes, stored only on your device.</li>
+      <li><strong>Premium features:</strong> Remove ads, unlock unlimited history, remove the watermark on generated codes, and access advanced QR customization (colors, logos and export options).</li>
+    </ul>
+
+    <h2>How It Works</h2>
+    <p>
+      QuickLens: QR &amp; Barcode Reader uses your device&apos;s camera to scan codes and, where you choose, your photo library to scan an existing image or save a generated code. Everything is processed on your device. There is no account, and the content of your scans, generated codes and history is never sent to us. See the <a href="#privacy">Privacy Policy</a> for details.
+    </p>
+    <p>
+      Scanning accuracy depends on camera quality, lighting and the condition of the code being scanned. The App is independent and is not affiliated with any third-party service whose link or content you may scan.
+    </p>
+    </section>
+
+    <hr />
+
+    <section id="privacy">
+    <h1>Privacy Policy</h1>
+    <p>
+      QuickLens: QR &amp; Barcode Reader (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;, or the &quot;App&quot;) is published by App Axis Lab. This Privacy Policy explains what the App accesses, why, and what it does with that information.
+    </p>
+    <p>
+      In short: the App works on your device. It does not create accounts, and it does not send the content of what you scan or generate, or your history, to us or to anyone else.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+    <p><strong>a. Personal Information</strong></p>
+    <p>We do not require account creation or login.</p>
+    <p>If you contact us:</p>
+    <ul>
+      <li>Email address</li>
+      <li>Any information you provide</li>
+    </ul>
+
+    <p><strong>b. Information Stored on Your Device</strong></p>
+    <p>The App stores only:</p>
+    <ul>
+      <li>Your scan and QR code generation history</li>
+      <li>QR codes you created or saved</li>
+      <li>Your subscription/premium status</li>
+      <li>Your language and display preferences</li>
+    </ul>
+    <p>Note:</p>
+    <ul>
+      <li>This data stays on your device and is never sent to us</li>
+      <li>It is deleted when you uninstall the App or clear its data</li>
+    </ul>
+
+    <p><strong>c. Camera &amp; Photo Library Content</strong></p>
+    <p>
+      When you scan a code, the camera feed and any photo you pick are processed on your device only to detect and decode the code. Images are not saved or sent anywhere unless you choose to save a generated QR code to your photo library yourself.
+    </p>
+
+    <p><strong>d. Device and Usage Data (Advertising)</strong></p>
+    <p>Google AdMob, which serves ads in the App, may collect:</p>
+    <ul>
+      <li>Device identifiers (such as the Advertising ID)</li>
+      <li>IP address</li>
+      <li>App usage data</li>
+    </ul>
+
+    <h2>2. Camera &amp; Photo Library Access: What It Reads and Why</h2>
+    <p>
+      The App requests camera access to scan QR codes and barcodes, and photo library access to let you scan a code from an existing image or save a code you generated. You grant these permissions yourself and can withdraw them at any time in your device Settings.
+    </p>
+    <ul>
+      <li>The camera is used only to detect and decode a QR/barcode on screen, in real time, on your device</li>
+      <li>Photo library access is used only when you choose to pick an image to scan, or to save a QR code you generated</li>
+      <li>The flashlight is toggled only at your request, to help the camera read codes in low light</li>
+    </ul>
+    <p>
+      This is processed on your device at that moment. It is not recorded, not logged and not transmitted, except for the scan/history entries you keep locally as described above.
+    </p>
+
+    <h2>3. How We Use Information</h2>
+    <ul>
+      <li>Scan and decode QR codes and barcodes you point the camera at or select from your photo library</li>
+      <li>Generate and let you save QR codes you create</li>
+      <li>Keep a local history of your scans and generated codes</li>
+      <li>Respond to support queries</li>
+    </ul>
+
+    <h2>4. Permissions</h2>
+    <ul>
+      <li><strong>Camera:</strong> Used to scan QR codes and barcodes in real time.</li>
+      <li><strong>Photo library:</strong> Used to scan a code from an existing image and to save QR codes you generate.</li>
+      <li><strong>Internet:</strong> Required to show ads and to process subscriptions and purchases.</li>
+    </ul>
+    <p>The App does not request access to your contacts, location, microphone, SMS, call logs or any files unrelated to the features above.</p>
+
+    <h2>5. Advertising (Google AdMob)</h2>
+    <p>We use Google AdMob to display ads.</p>
+    <p>AdMob may collect and use:</p>
+    <ul>
+      <li>Device identifiers (e.g., Advertising ID)</li>
+      <li>IP address</li>
+      <li>App usage data</li>
+    </ul>
+    <p>This helps serve and measure ads, which may be personalized.</p>
+    <p><strong>Personalized Ads</strong></p>
+    <ul>
+      <li>Ads may be tailored based on user interests</li>
+      <li>Users in certain regions (EEA, UK, etc.) may be asked for consent</li>
+    </ul>
+    <p><strong>Opt-Out</strong></p>
+    <p>Users can reset or opt out of personalized advertising by:</p>
+    <ul>
+      <li>Adjusting the advertising ID and ad settings on the device</li>
+      <li>Visiting: <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">https://adssettings.google.com</a></li>
+    </ul>
+    <p>For more details: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+
+    <h2>6. Purchases &amp; Third-Party Services</h2>
+    <p>The only third parties involved are:</p>
+    <ul>
+      <li>Google AdMob (advertising)</li>
+      <li>Google Play (subscriptions and billing)</li>
+      <li>RevenueCat (subscription management — receives purchase/transaction and entitlement data from Google Play to activate your premium features; it does not receive your full payment card details)</li>
+    </ul>
+    <p>
+      Any subscription or purchase is processed by Google Play. We do not receive or store your payment details. These services operate under their own privacy policies:
+    </p>
+    <ul>
+      <li>Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+      <li>RevenueCat: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">https://www.revenuecat.com/privacy</a></li>
+    </ul>
+    <p>We do not sell your data. We do not share the content of your scans, generated codes or history with anyone.</p>
+
+    <h2>7. Data Security</h2>
+    <p>We implement:</p>
+    <ul>
+      <li>On-device processing, with no account and no backend</li>
+      <li>Minimal data collection</li>
+      <li>No storage of your scanned or generated QR code content on our servers</li>
+    </ul>
+
+    <h2>8. Data Retention</h2>
+    <ul>
+      <li>History, saved codes and preferences stay on your device until you uninstall the App or clear its data</li>
+      <li>Emails sent to support may be retained to answer your request</li>
+    </ul>
+
+    <h2>9. Children&apos;s Privacy</h2>
+    <p>
+      The App is not intended for children under 13 years of age unless permitted by applicable law and under parental supervision.
+    </p>
+    <p>We do not knowingly collect personal data from children under 13. If we learn that such data has been collected, we will delete it promptly.</p>
+
+    <h2>10. Your Choices &amp; Privacy Rights</h2>
+    <p>You may:</p>
+    <ul>
+      <li>Revoke camera or photo library permissions at any time in your device Settings</li>
+      <li>Clear or delete your scan and generation history in the App</li>
+      <li>Uninstall the App to delete all of its data</li>
+      <li>Manage or cancel your subscription through Google Play</li>
+      <li>Request access, request deletion or withdraw consent for any information you sent us</li>
+    </ul>
+    <p>Contact: <a href="mailto:support@appaxislab.com">support@appaxislab.com</a></p>
+
+    <h2>11. Changes to Policy</h2>
+    <p>We may update this policy. Changes will be shown in the App and on this page with a new effective date.</p>
+
+    <h2>12. Contact</h2>
+    <p><a href="mailto:support@appaxislab.com">support@appaxislab.com</a></p>
+    </section>
+
+    <hr />
+
+    <section id="eula">
+    <h1>End User License Agreement (EULA)</h1>
+    <p>
+      This End User License Agreement (&quot;Agreement&quot;) is a legal agreement between you (&quot;User&quot; or &quot;you&quot;) and App Axis Lab (&quot;Licensor&quot;, &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) for the QuickLens: QR &amp; Barcode Reader mobile application (the &quot;App&quot;). By downloading, installing, or using the App, you agree to be bound by this Agreement. If you do not agree, do not download, install, or use the App.
+    </p>
+
+    <h2>1. License Grant</h2>
+    <p>
+      Subject to your compliance with this Agreement, we grant you a limited, non-exclusive, non-transferable, revocable license to install and use the App on devices you own or control, solely for personal, non-commercial purposes, in accordance with this Agreement and applicable app store terms.
+    </p>
+
+    <h2>2. What the App Does</h2>
+    <p>
+      The App lets you scan QR codes and barcodes using your device&apos;s camera or an existing photo, and generate your own QR codes for links, text and other content that you can save and share. These features are tools you control.
+    </p>
+
+    <h2>3. Restrictions</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Copy, modify, adapt, translate, or create derivative works of the App</li>
+      <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App, except where expressly permitted by law</li>
+      <li>Rent, lease, lend, sell, sublicense, or distribute the App or any part of it</li>
+      <li>Remove, alter, or obscure any proprietary notices or labels on the App</li>
+      <li>Use the App for any unlawful purpose or in violation of any applicable laws or regulations</li>
+      <li>Use the App to generate or distribute QR codes that link to malicious, deceptive, or unlawful content</li>
+      <li>Interfere with or disrupt the App, or attempt to access it through unauthorized means</li>
+      <li>Use automated systems or bots to access or use the App without our written consent</li>
+    </ul>
+
+    <h2>4. Intellectual Property</h2>
+    <p>
+      The App, including all content, features, design, trademarks, and software, is owned by App Axis Lab or its licensors and is protected by copyright, trademark, and other intellectual property laws. This Agreement does not transfer any ownership rights to you.
+    </p>
+
+    <h2>5. Scanned Content Disclaimer</h2>
+    <p>
+      QR codes can link to websites, downloads, Wi-Fi networks or other content controlled by third parties. We do not create, review, endorse or control the content of any QR code you scan. You are solely responsible for deciding whether to open a link or act on content revealed by a scan. Exercise caution before visiting unfamiliar websites or sharing information prompted by a scanned code.
+    </p>
+
+    <h2>6. No Guarantee of Scan Accuracy</h2>
+    <p>
+      Scanning and decoding results depend on camera quality, lighting, the condition of the code and other factors outside our control. Scans and generated codes are provided on a best-effort basis and are not guaranteed to be accurate, complete, or readable by every device or app.
+    </p>
+
+    <h2>7. Permissions &amp; Device Access</h2>
+    <p>
+      To work, the App needs camera access to scan codes and may request photo library access to scan from or save images. You grant these yourself and can withdraw them at any time in your device Settings. Use of permissions and exactly what is accessed is described in our <a href="#privacy">Privacy Policy</a>.
+    </p>
+
+    <h2>8. Third-Party Services &amp; Advertising</h2>
+    <p>
+      The App displays advertisements provided by Google AdMob, uses Google Play for billing, and uses RevenueCat to manage subscriptions. These services are governed by their own terms and privacy policies. We are not responsible for third-party services, content, or practices.
+    </p>
+    <p>
+      Ad partners may collect device and usage data as described in our Privacy Policy. Your interactions with ads are subject to the applicable third-party terms.
+    </p>
+
+    <h2>9. Subscriptions &amp; In-App Purchases</h2>
+    <p>
+      If the App offers paid features, subscriptions, or in-app purchases (such as removing ads, unlimited history, no watermark, or advanced QR customization), payment and billing are processed by Google Play, with subscription status managed via RevenueCat. Subscriptions are managed through Google Play and are subject to Google Play&apos;s terms and refund policies. We do not store your full payment card details.
+    </p>
+
+    <h2>10. Disclaimer of Warranties</h2>
+    <p>
+      THE APP IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR FREE OF HARMFUL COMPONENTS.
+    </p>
+
+    <h2>11. Limitation of Liability</h2>
+    <p>
+      TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, APP AXIS LAB AND ITS AFFILIATES, OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR GOODWILL, ARISING OUT OF OR RELATED TO YOUR USE OF OR INABILITY TO USE THE APP, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+    </p>
+    <p>
+      OUR TOTAL LIABILITY FOR ANY CLAIM ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE APP SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID US FOR THE APP IN THE TWELVE (12) MONTHS BEFORE THE CLAIM, OR (B) FIFTY U.S. DOLLARS (USD $50), WHERE PERMITTED BY LAW.
+    </p>
+
+    <h2>12. Indemnification</h2>
+    <p>
+      You agree to indemnify and hold harmless App Axis Lab from any claims, damages, losses, liabilities, and expenses (including reasonable legal fees) arising from your use of the App or your violation of this Agreement or applicable law.
+    </p>
+
+    <h2>13. Termination</h2>
+    <p>
+      This license is effective until terminated. We may suspend or terminate your access to the App at any time if you breach this Agreement. Upon termination, you must cease all use of the App and delete all copies from your devices. Sections that by their nature should survive termination will survive.
+    </p>
+
+    <h2>14. Changes to This Agreement</h2>
+    <p>
+      We may update this EULA from time to time. Continued use of the App after changes become effective constitutes acceptance of the revised Agreement. The &quot;EULA last updated&quot; date at the top of this page will reflect material revisions.
+    </p>
+
+    <h2>15. Governing Law &amp; Disputes</h2>
+    <p>
+      This Agreement is governed by the laws of the jurisdiction in which App Axis Lab operates, without regard to conflict-of-law principles, except where mandatory consumer protection laws in your country provide otherwise. Any dispute shall be resolved in the courts of that jurisdiction, unless applicable law requires a different forum.
+    </p>
+
+    <h2>16. Children</h2>
+    <p>
+      The App is not intended for children under 13 years of age unless permitted by applicable law and under parental supervision.
+    </p>
+
+    <h2>17. Google Play (Android)</h2>
+    <p>
+      If you obtained the App through Google Play, you agree that Google LLC is not a party to this Agreement and has no responsibility or liability with respect to the App. Your use of Google Play is subject to Google Play&apos;s terms of service.
+    </p>
+
+    <h2>18. Severability &amp; Entire Agreement</h2>
+    <p>
+      If any provision of this Agreement is held invalid or unenforceable, the remaining provisions remain in full force. This Agreement, together with our Privacy Policy, constitutes the entire agreement between you and App Axis Lab regarding the App and supersedes prior understandings on the same subject.
+    </p>
+
+    <h2>19. Contact</h2>
+    <p>
+      For questions about this EULA, contact App Axis Lab at <a href="mailto:support@appaxislab.com">support@appaxislab.com</a>.
+    </p>
+    </section>
+  
+        </div>
+      </div>
+    </PrivacyLayout>
+  )
+}

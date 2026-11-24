@@ -1,0 +1,331 @@
+import type { Metadata } from 'next'
+import PrivacyLayout from '@/components/PrivacyLayout'
+import s from '@/styles/privacy.module.css'
+
+export const metadata: Metadata = {
+  title: 'ScrollPause: Reel Counter — Privacy Policy & EULA | App Axis Lab',
+}
+
+export default function ReelCounterPrivacy() {
+  return (
+    <PrivacyLayout
+      appName="ScrollPause: Reel Counter"
+      subtitle="Privacy Policy & End User License Agreement"
+      lastUpdated="Last updated: November 17, 2026"
+    >
+      <div className={s.card}>
+        <div className={s.privacyContent}>
+
+    <p>
+      This page contains a short <a href="#about">description of the app</a>, the <a href="#privacy">Privacy Policy</a> and <a href="#eula">End User License Agreement (EULA)</a> for ScrollPause: Reel Counter. By using the App, you agree to both documents.
+    </p>
+
+    <section id="about">
+    <h1>About the App</h1>
+    <p>
+      ScrollPause: Reel Counter helps you take back your time from endless scrolling. It counts the reels and short videos you watch in the apps you choose, and gives you simple tools to cut back when you want to.
+    </p>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li><strong>Reel counter:</strong> Counts the Reels and Shorts you watch in YouTube, Instagram, Facebook, TikTok and Snapchat, per app and per day.</li>
+      <li><strong>Floating counter bubble:</strong> A small bubble that shows your running count while you are inside the apps you chose.</li>
+      <li><strong>Daily overview &amp; reports:</strong> See today&apos;s total, a Healthy / Moderate / High status and a breakdown by app.</li>
+      <li><strong>Reel Lock:</strong> Optionally lock Reels and Shorts so you cannot keep scrolling them.</li>
+      <li><strong>App blocker:</strong> Block the apps you choose, with optional challenge screens (breathing, math or a written reason) before you can continue.</li>
+      <li><strong>Website blocker:</strong> Block websites you add in supported browsers, plus an optional built-in 18+ block.</li>
+      <li><strong>Languages:</strong> English, Spanish, French, German, Portuguese, Hindi, Urdu and Arabic.</li>
+    </ul>
+
+    <h2>How It Works</h2>
+    <p>
+      ScrollPause: Reel Counter uses Android&apos;s Accessibility Service and the display-over-other-apps permission, both of which you turn on yourself and can turn off at any time. Everything is processed on your device. There is no account, and your counts, block lists and browsing are never sent to us. See the <a href="#privacy">Privacy Policy</a> for details.
+    </p>
+    <p>
+      Detection and blocking are best-effort and depend on how other apps are built. The App is independent and is not affiliated with YouTube, Facebook, Instagram, TikTok or Snapchat.
+    </p>
+    </section>
+
+    <hr />
+
+    <section id="privacy">
+    <h1>Privacy Policy</h1>
+    <p>
+      ScrollPause: Reel Counter (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;, or the &quot;App&quot;) is published by App Axis Lab. This Privacy Policy explains what the App accesses, why, and what it does with that information.
+    </p>
+    <p>
+      In short: the App works on your device. It does not create accounts, and it does not send what it sees in other apps, your browsing, or your reel counts to us or to anyone else.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+    <p><strong>a. Personal Information</strong></p>
+    <p>We do not require account creation or login.</p>
+    <p>If you contact us:</p>
+    <ul>
+      <li>Email address</li>
+      <li>Any information you provide</li>
+    </ul>
+
+    <p><strong>b. Information Stored on Your Device</strong></p>
+    <p>The App stores only:</p>
+    <ul>
+      <li>The number of reels counted per day, per app</li>
+      <li>The apps you chose to monitor or block</li>
+      <li>The websites you added to your block list</li>
+      <li>Whether the 18+ block and Reel Lock are turned on</li>
+      <li>Your language and display preferences</li>
+    </ul>
+    <p>Note:</p>
+    <ul>
+      <li>This data stays on your device and is never sent to us</li>
+      <li>It is deleted when you uninstall the App or clear its data</li>
+    </ul>
+
+    <p><strong>c. Challenge Screen Input</strong></p>
+    <p>
+      If you choose a challenge screen (breathing, math or a written reason) for blocked apps, anything you type there is used only to unlock the button and is never saved or sent.
+    </p>
+
+    <p><strong>d. Device and Usage Data (Advertising)</strong></p>
+    <p>Google AdMob, which serves ads in the App, may collect:</p>
+    <ul>
+      <li>Device identifiers (such as the Advertising ID)</li>
+      <li>IP address</li>
+      <li>App usage data</li>
+    </ul>
+
+    <h2>2. Accessibility Service: What It Reads and Why</h2>
+    <p>
+      The App uses Android&apos;s Accessibility Service API. You turn it on yourself in Android Settings, after an in-app disclosure that you must accept first. You can turn it off at any time.
+    </p>
+    <p>While it is on, the App can see:</p>
+    <ul>
+      <li>Which app is currently on screen</li>
+      <li>The on-screen layout of YouTube, Facebook, Instagram, TikTok and Snapchat, only to recognise when a Reels, Shorts or similar video screen is showing, so it can count the reels you watch or lock them if you turned Reel Lock on</li>
+      <li>The address-bar text of supported web browsers, only to compare it with the websites you chose to block and with the optional built-in 18+ list</li>
+      <li>When an app you chose to block is opened</li>
+    </ul>
+    <p>
+      This information is checked on your device at that moment. It is not recorded, not stored, not logged and not transmitted. The App does not read your messages, passwords, payment details or anything you type, and it does not keep a browsing history.
+    </p>
+
+    <p><strong>Usage Access (optional)</strong></p>
+    <p>
+      If you turn on the optional Usage access permission, the App also checks which app is in front, once a second, as a backup way to notice an app you chose to block. The app name is compared in memory only and is never stored or sent. This backup can block apps only, not websites or reels.
+    </p>
+
+    <h2>3. How We Use Information</h2>
+    <ul>
+      <li>Count the reels and short videos you watch in the apps you choose</li>
+      <li>Lock Reels and Shorts, block websites and block apps that you chose to block</li>
+      <li>Show the floating counter and blocking screens</li>
+      <li>Respond to support queries</li>
+    </ul>
+
+    <h2>4. Permissions</h2>
+    <ul>
+      <li><strong>Accessibility Service:</strong> Described in section 2. Used to count reels and to detect apps, websites and Reels you chose to block.</li>
+      <li><strong>Usage access (optional):</strong> Lets the App notice that a blocked app is in front when the Accessibility Service is off.</li>
+      <li><strong>Display over other apps:</strong> Shows the floating counter bubble and lets the blocking and challenge screens appear on top of apps you chose to block.</li>
+      <li><strong>Notifications and foreground service:</strong> Keeps the floating counter running and shows its status notification.</li>
+      <li><strong>Internet:</strong> Required to show ads and to process subscriptions.</li>
+    </ul>
+    <p>The App does not request access to your contacts, location, camera, microphone, SMS, call logs or files.</p>
+
+    <h2>5. Advertising (Google AdMob)</h2>
+    <p>We use Google AdMob to display ads.</p>
+    <p>AdMob may collect and use:</p>
+    <ul>
+      <li>Device identifiers (e.g., Advertising ID)</li>
+      <li>IP address</li>
+      <li>App usage data</li>
+    </ul>
+    <p>This helps serve and measure ads, which may be personalized.</p>
+    <p><strong>Personalized Ads</strong></p>
+    <ul>
+      <li>Ads may be tailored based on user interests</li>
+      <li>Users in certain regions (EEA, UK, etc.) may be asked for consent</li>
+    </ul>
+    <p><strong>Opt-Out</strong></p>
+    <p>Users can reset or opt out of personalized advertising by:</p>
+    <ul>
+      <li>Adjusting the advertising ID and ad settings on the device</li>
+      <li>Visiting: <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">https://adssettings.google.com</a></li>
+    </ul>
+    <p>For more details: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+
+    <h2>6. Purchases &amp; Third-Party Services</h2>
+    <p>The only third parties involved are:</p>
+    <ul>
+      <li>Google AdMob (advertising)</li>
+      <li>Google Play (subscriptions and billing)</li>
+    </ul>
+    <p>
+      Any subscription or purchase is processed by Google Play. We do not receive or store your payment details. These services operate under their own privacy policies:
+    </p>
+    <ul>
+      <li>Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+    </ul>
+    <p>We do not sell your data. We do not share information collected through the Accessibility Service with anyone.</p>
+
+    <h2>7. Data Security</h2>
+    <p>We implement:</p>
+    <ul>
+      <li>On-device processing, with no account and no backend</li>
+      <li>Minimal data collection</li>
+      <li>No storage of what the App sees in other apps or browsers</li>
+    </ul>
+
+    <h2>8. Data Retention</h2>
+    <ul>
+      <li>Counts, block lists and preferences stay on your device until you uninstall the App or clear its data</li>
+      <li>Emails sent to support may be retained to answer your request</li>
+    </ul>
+
+    <h2>9. Children&apos;s Privacy</h2>
+    <p>
+      The App is not intended for children under 13 years of age unless permitted by applicable law and under parental supervision.
+    </p>
+    <p>We do not knowingly collect personal data from children under 13. If we learn that such data has been collected, we will delete it promptly.</p>
+
+    <h2>10. Your Choices &amp; Privacy Rights</h2>
+    <p>You may:</p>
+    <ul>
+      <li>Turn off the Accessibility Service at any time</li>
+      <li>Remove any monitored or blocked app and site</li>
+      <li>Switch Reel Lock and the 18+ block off</li>
+      <li>Uninstall the App to delete all of its data</li>
+      <li>Request access, request deletion or withdraw consent for any information you sent us</li>
+    </ul>
+    <p>Contact: <a href="mailto:support@appaxislab.com">support@appaxislab.com</a></p>
+
+    <h2>11. Changes to Policy</h2>
+    <p>We may update this policy. Changes will be shown in the App and on this page with a new effective date.</p>
+
+    <h2>12. Contact</h2>
+    <p><a href="mailto:support@appaxislab.com">support@appaxislab.com</a></p>
+    </section>
+
+    <hr />
+
+    <section id="eula">
+    <h1>End User License Agreement (EULA)</h1>
+    <p>
+      This End User License Agreement (&quot;Agreement&quot;) is a legal agreement between you (&quot;User&quot; or &quot;you&quot;) and App Axis Lab (&quot;Licensor&quot;, &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) for the ScrollPause: Reel Counter mobile application (the &quot;App&quot;). By downloading, installing, or using the App, you agree to be bound by this Agreement. If you do not agree, do not download, install, or use the App.
+    </p>
+
+    <h2>1. License Grant</h2>
+    <p>
+      Subject to your compliance with this Agreement, we grant you a limited, non-exclusive, non-transferable, revocable license to install and use the App on devices you own or control, solely for personal, non-commercial purposes, in accordance with this Agreement and applicable app store terms.
+    </p>
+
+    <h2>2. What the App Does</h2>
+    <p>
+      The App counts the reels and short videos you watch in apps you choose, and can lock Reels and Shorts, block websites and block apps that you choose to block. These features are tools you control; you decide what to monitor and block.
+    </p>
+
+    <h2>3. Restrictions</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Copy, modify, adapt, translate, or create derivative works of the App</li>
+      <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App, except where expressly permitted by law</li>
+      <li>Rent, lease, lend, sell, sublicense, or distribute the App or any part of it</li>
+      <li>Remove, alter, or obscure any proprietary notices or labels on the App</li>
+      <li>Use the App for any unlawful purpose or in violation of any applicable laws or regulations</li>
+      <li>Use the App to monitor another person without their knowledge and consent</li>
+      <li>Interfere with or disrupt the App, or use it to interfere with other apps in ways they do not allow</li>
+      <li>Use automated systems or bots to access or use the App without our written consent</li>
+    </ul>
+
+    <h2>4. Intellectual Property</h2>
+    <p>
+      The App, including all content, features, design, trademarks, and software, is owned by App Axis Lab or its licensors and is protected by copyright, trademark, and other intellectual property laws. This Agreement does not transfer any ownership rights to you.
+    </p>
+
+    <h2>5. Not Affiliated</h2>
+    <p>
+      YouTube, Facebook, Instagram, TikTok, Snapchat and other names are trademarks of their owners. The App is independent and is not affiliated with, endorsed by or sponsored by them.
+    </p>
+
+    <h2>6. No Guarantee of Detection or Blocking</h2>
+    <p>
+      Detection and blocking depend on how other apps and browsers are built and may stop working, or block or miss things, after those apps update. Reel counts and blocks are best-effort and are not guaranteed to be accurate or complete.
+    </p>
+
+    <h2>7. Permissions &amp; Device Access</h2>
+    <p>
+      To work, the App needs the Accessibility Service and the display-over-other-apps permission, and may optionally use Usage access. You grant these yourself and can withdraw them at any time in Android Settings. Use of permissions and exactly what is accessed is described in our <a href="#privacy">Privacy Policy</a>.
+    </p>
+
+    <h2>8. Third-Party Services &amp; Advertising</h2>
+    <p>
+      The App displays advertisements provided by Google AdMob and uses Google Play for billing. These services are governed by their own terms and privacy policies. We are not responsible for third-party services, content, or practices.
+    </p>
+    <p>
+      Ad partners may collect device and usage data as described in our Privacy Policy. Your interactions with ads are subject to the applicable third-party terms.
+    </p>
+
+    <h2>9. Subscriptions &amp; In-App Purchases</h2>
+    <p>
+      If the App offers paid features, subscriptions, or in-app purchases, payment and billing are processed by Google Play. Subscriptions are managed through Google Play and are subject to Google Play&apos;s terms and refund policies. We do not store your full payment card details.
+    </p>
+
+    <h2>10. Disclaimer of Warranties</h2>
+    <p>
+      THE APP IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR FREE OF HARMFUL COMPONENTS.
+    </p>
+
+    <h2>11. Limitation of Liability</h2>
+    <p>
+      TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, APP AXIS LAB AND ITS AFFILIATES, OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR GOODWILL, ARISING OUT OF OR RELATED TO YOUR USE OF OR INABILITY TO USE THE APP, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+    </p>
+    <p>
+      OUR TOTAL LIABILITY FOR ANY CLAIM ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE APP SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID US FOR THE APP IN THE TWELVE (12) MONTHS BEFORE THE CLAIM, OR (B) FIFTY U.S. DOLLARS (USD $50), WHERE PERMITTED BY LAW.
+    </p>
+
+    <h2>12. Indemnification</h2>
+    <p>
+      You agree to indemnify and hold harmless App Axis Lab from any claims, damages, losses, liabilities, and expenses (including reasonable legal fees) arising from your use of the App or your violation of this Agreement or applicable law.
+    </p>
+
+    <h2>13. Termination</h2>
+    <p>
+      This license is effective until terminated. We may suspend or terminate your access to the App at any time if you breach this Agreement. Upon termination, you must cease all use of the App and delete all copies from your devices. Sections that by their nature should survive termination will survive.
+    </p>
+
+    <h2>14. Changes to This Agreement</h2>
+    <p>
+      We may update this EULA from time to time. Continued use of the App after changes become effective constitutes acceptance of the revised Agreement. The &quot;EULA last updated&quot; date at the top of this page will reflect material revisions.
+    </p>
+
+    <h2>15. Governing Law &amp; Disputes</h2>
+    <p>
+      This Agreement is governed by the laws of the jurisdiction in which App Axis Lab operates, without regard to conflict-of-law principles, except where mandatory consumer protection laws in your country provide otherwise. Any dispute shall be resolved in the courts of that jurisdiction, unless applicable law requires a different forum.
+    </p>
+
+    <h2>16. Children</h2>
+    <p>
+      The App is not intended for children under 13 years of age unless permitted by applicable law and under parental supervision.
+    </p>
+
+    <h2>17. Google Play (Android)</h2>
+    <p>
+      If you obtained the App through Google Play, you agree that Google LLC is not a party to this Agreement and has no responsibility or liability with respect to the App. Your use of Google Play is subject to Google Play&apos;s terms of service.
+    </p>
+
+    <h2>18. Severability &amp; Entire Agreement</h2>
+    <p>
+      If any provision of this Agreement is held invalid or unenforceable, the remaining provisions remain in full force. This Agreement, together with our Privacy Policy, constitutes the entire agreement between you and App Axis Lab regarding the App and supersedes prior understandings on the same subject.
+    </p>
+
+    <h2>19. Contact</h2>
+    <p>
+      For questions about this EULA, contact App Axis Lab at <a href="mailto:support@appaxislab.com">support@appaxislab.com</a>.
+    </p>
+    </section>
+  
+        </div>
+      </div>
+    </PrivacyLayout>
+  )
+}
