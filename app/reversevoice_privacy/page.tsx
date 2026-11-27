@@ -1,0 +1,329 @@
+import type { Metadata } from 'next'
+import PrivacyLayout from '@/components/PrivacyLayout'
+import s from '@/styles/privacy.module.css'
+
+export const metadata: Metadata = {
+  title: 'Reverse Singing & Voice Studio — Privacy Policy & EULA | App Axis Lab',
+}
+
+export default function ReverseVoicePrivacy() {
+  return (
+    <PrivacyLayout
+      appName="Reverse Singing & Voice Studio"
+      subtitle="Privacy Policy & End User License Agreement"
+      lastUpdated="Last updated: November 27, 2026"
+    >
+      <div className={s.card}>
+        <div className={s.privacyContent}>
+
+    <p>
+      This page contains a short <a href="#about">description of the app</a>, the <a href="#privacy">Privacy Policy</a> and <a href="#eula">End User License Agreement (EULA)</a> for Reverse Singing &amp; Voice Studio. By using the App, you agree to both documents.
+    </p>
+
+    <section id="about">
+    <h1>About the App</h1>
+    <p>
+      Reverse Singing &amp; Voice Studio lets you record your voice or import a sound, play it backwards, and take on fun reverse challenges alone or with friends on one phone.
+    </p>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li><strong>Record &amp; reverse:</strong> Record your voice with the microphone (30 seconds free, 60 seconds with Premium) or import an audio file, and hear it played backwards.</li>
+      <li><strong>Playback controls:</strong> Change the speed and pitch, loop the sound and compare the original with the reversed version.</li>
+      <li><strong>Voice filters:</strong> Apply simple sound effects to your recording.</li>
+      <li><strong>Reverse challenges:</strong> Listen to a reversed word, then say it backwards and try to guess the answer. Play solo through levels and packs, or in Party mode with friends on the same device.</li>
+      <li><strong>History:</strong> Save your recordings on your device, then play, rename, share or delete them.</li>
+      <li><strong>Save &amp; share:</strong> Export a recording and share it with the apps you choose.</li>
+      <li><strong>Languages:</strong> The app is available in English (US and UK), German, Spanish, French, Portuguese, Hindi, Urdu and Arabic. Challenge content and voices are in English.</li>
+    </ul>
+
+    <h2>How It Works</h2>
+    <p>
+      Reverse Singing &amp; Voice Studio works on your device. Recording, reversing, filters and challenges are processed locally, there is no account and there is no server that stores your recordings. See the <a href="#privacy">Privacy Policy</a> for details.
+    </p>
+    <p>
+      Challenge words are spoken with your device&apos;s built-in text-to-speech voice. The App is independent and is not affiliated with any music, social media or voice service.
+    </p>
+    </section>
+
+    <hr />
+
+    <section id="privacy">
+    <h1>Privacy Policy</h1>
+    <p>
+      Reverse Singing &amp; Voice Studio (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;, or the &quot;App&quot;) is published by App Axis Lab. This Privacy Policy explains what the App accesses, why, and what it does with that information.
+    </p>
+    <p>
+      In short: your recordings stay on your device. The App does not create accounts and does not upload your voice or your audio files to us or to anyone else.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+    <p><strong>a. Personal Information</strong></p>
+    <p>We do not require account creation or login.</p>
+    <p>If you contact us:</p>
+    <ul>
+      <li>Email address</li>
+      <li>Any information you provide</li>
+    </ul>
+
+    <p><strong>b. Information Stored on Your Device</strong></p>
+    <p>The App stores only:</p>
+    <ul>
+      <li>Your recordings and imported audio, and the reversed or filtered versions you save to History</li>
+      <li>The names you give to recordings and the players&apos; names you enter in Party mode</li>
+      <li>Your challenge progress (levels completed and stars)</li>
+      <li>Your language, playback settings and Premium status</li>
+    </ul>
+    <p>Note:</p>
+    <ul>
+      <li>This data stays on your device and is never sent to us</li>
+      <li>It is deleted when you delete it in the App, uninstall the App or clear its data</li>
+    </ul>
+
+    <p><strong>c. Microphone and Audio Files</strong></p>
+    <p>
+      Audio is recorded only while you are recording in the App, after you allow the microphone permission. If you import a file, the App reads only the file you pick. Recordings and files are processed on your device and are not uploaded. When you choose to share a recording, it is passed to the app you select, which handles it under its own privacy policy.
+    </p>
+
+    <p><strong>d. Device and Usage Data (Advertising and Analytics)</strong></p>
+    <p>Google AdMob, which serves ads in the App, and Google Firebase, which we use for analytics and crash reports, may collect:</p>
+    <ul>
+      <li>Device identifiers (such as the Advertising ID or an app instance ID)</li>
+      <li>IP address</li>
+      <li>App usage data, such as screens viewed and buttons tapped</li>
+      <li>Crash reports and basic device information (device model, Android version)</li>
+    </ul>
+    <p>This data does not include the content of your recordings.</p>
+
+    <h2>2. How We Use Information</h2>
+    <ul>
+      <li>Record, import, reverse, filter, save and share your audio</li>
+      <li>Run the challenges and keep your progress</li>
+      <li>Show ads to users who do not have Premium</li>
+      <li>Understand how the App is used and find and fix crashes</li>
+      <li>Respond to support queries</li>
+    </ul>
+
+    <h2>3. Permissions</h2>
+    <ul>
+      <li><strong>Microphone (Record audio):</strong> Used only to record your voice when you start a recording. You can refuse or withdraw it in Android Settings; you can still import files.</li>
+      <li><strong>Internet and network state:</strong> Required to show ads, send analytics and crash reports, load settings and process subscriptions.</li>
+      <li><strong>Advertising ID:</strong> Used by Google for ads and measurement. You can reset or delete it in your device settings.</li>
+      <li><strong>Files you pick:</strong> The App can read only the audio file you choose with the system file picker.</li>
+    </ul>
+    <p>The App does not request access to your contacts, location, camera, SMS, call logs or your whole storage.</p>
+
+    <h2>4. Advertising (Google AdMob)</h2>
+    <p>We use Google AdMob to display ads to users who do not have Premium.</p>
+    <p>AdMob may collect and use:</p>
+    <ul>
+      <li>Device identifiers (e.g., Advertising ID)</li>
+      <li>IP address</li>
+      <li>App usage data</li>
+    </ul>
+    <p>This helps serve and measure ads, which may be personalized.</p>
+    <p><strong>Personalized Ads and Consent</strong></p>
+    <ul>
+      <li>Ads may be tailored based on user interests</li>
+      <li>Users in certain regions (EEA, UK, etc.) are asked for consent through Google&apos;s consent message before ads are loaded</li>
+    </ul>
+    <p><strong>Opt-Out</strong></p>
+    <p>Users can reset or opt out of personalized advertising by:</p>
+    <ul>
+      <li>Adjusting the advertising ID and ad settings on the device</li>
+      <li>Visiting: <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">https://adssettings.google.com</a></li>
+    </ul>
+    <p>For more details: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+
+    <h2>5. Analytics, Crash Reports and Remote Config (Google Firebase)</h2>
+    <p>We use Firebase Analytics to see which features are used, Firebase Crashlytics to receive crash reports, and Firebase Remote Config to adjust settings of the App without an update.</p>
+    <ul>
+      <li>Analytics events are about actions in the App (for example, a screen opened or a level completed). They never contain your recordings, imported files or the names you type.</li>
+      <li>Crash reports contain technical information about the error and the device.</li>
+      <li>Remote Config downloads settings from Google&apos;s servers; it does not upload your content.</li>
+    </ul>
+    <p>For more details: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a></p>
+
+    <h2>6. Purchases &amp; Third-Party Services</h2>
+    <p>The only third parties involved are:</p>
+    <ul>
+      <li>Google AdMob (advertising)</li>
+      <li>Google Firebase (analytics, crash reports, remote settings)</li>
+      <li>Google Play (subscriptions and billing)</li>
+    </ul>
+    <p>
+      Any subscription or purchase is processed by Google Play. We do not receive or store your payment details. These services operate under their own privacy policies:
+    </p>
+    <ul>
+      <li>Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+    </ul>
+    <p>We do not sell your data. We do not use your recordings to train any model and we do not send them to any AI or voice service.</p>
+
+    <h2>7. Data Security</h2>
+    <p>We implement:</p>
+    <ul>
+      <li>On-device processing, with no account and no backend that stores your audio</li>
+      <li>Minimal data collection</li>
+      <li>Encrypted connections for the services listed above</li>
+    </ul>
+
+    <h2>8. Data Retention</h2>
+    <ul>
+      <li>Recordings, progress and settings stay on your device until you delete them, uninstall the App or clear its data</li>
+      <li>Analytics and crash data held by Google are kept according to Google&apos;s retention settings</li>
+      <li>Emails sent to support may be retained to answer your request</li>
+    </ul>
+
+    <h2>9. Children&apos;s Privacy</h2>
+    <p>
+      The App is not intended for children under 13 years of age unless permitted by applicable law and under parental supervision.
+    </p>
+    <p>We do not knowingly collect personal data from children under 13. If we learn that such data has been collected, we will delete it promptly.</p>
+
+    <h2>10. Your Choices &amp; Privacy Rights</h2>
+    <p>You may:</p>
+    <ul>
+      <li>Refuse or withdraw the microphone permission in Android Settings</li>
+      <li>Delete any recording from History at any time</li>
+      <li>Reset your advertising ID or opt out of personalized ads in your device settings</li>
+      <li>Change your consent choice where Google&apos;s consent message is shown</li>
+      <li>Uninstall the App to delete all of its data on your device</li>
+      <li>Request access, request deletion or withdraw consent for any information you sent us</li>
+    </ul>
+    <p>Contact: <a href="mailto:support@appaxislab.com">support@appaxislab.com</a></p>
+
+    <h2>11. Changes to Policy</h2>
+    <p>We may update this policy. Changes will be shown in the App and on this page with a new effective date.</p>
+
+    <h2>12. Contact</h2>
+    <p><a href="mailto:support@appaxislab.com">support@appaxislab.com</a></p>
+    </section>
+
+    <hr />
+
+    <section id="eula">
+    <h1>End User License Agreement (EULA)</h1>
+    <p>
+      This End User License Agreement (&quot;Agreement&quot;) is a legal agreement between you (&quot;User&quot; or &quot;you&quot;) and App Axis Lab (&quot;Licensor&quot;, &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) for the Reverse Singing &amp; Voice Studio mobile application (the &quot;App&quot;). By downloading, installing, or using the App, you agree to be bound by this Agreement. If you do not agree, do not download, install, or use the App.
+    </p>
+
+    <h2>1. License Grant</h2>
+    <p>
+      Subject to your compliance with this Agreement, we grant you a limited, non-exclusive, non-transferable, revocable license to install and use the App on devices you own or control, solely for personal, non-commercial purposes, in accordance with this Agreement and applicable app store terms.
+    </p>
+
+    <h2>2. What the App Does</h2>
+    <p>
+      The App records or imports audio, plays it backwards, applies speed, pitch and voice filters, keeps your recordings in History, lets you share them, and offers reverse challenges. You decide what to record, import and share.
+    </p>
+
+    <h2>3. Your Content</h2>
+    <p>
+      You keep all rights to the recordings and files you create or import. You are responsible for your content and for having the right to record, import and share it. We do not upload your content and do not claim any ownership of it.
+    </p>
+
+    <h2>4. Restrictions</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Copy, modify, adapt, translate, or create derivative works of the App</li>
+      <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App, except where expressly permitted by law</li>
+      <li>Rent, lease, lend, sell, sublicense, or distribute the App or any part of it</li>
+      <li>Remove, alter, or obscure any proprietary notices or labels on the App</li>
+      <li>Use the App for any unlawful purpose or in violation of any applicable laws or regulations</li>
+      <li>Record or share another person&apos;s voice without their knowledge and consent, or use the App to harass, deceive or impersonate others</li>
+      <li>Import or share content that you do not have the right to use, including copyrighted music you are not allowed to copy or share</li>
+      <li>Use automated systems or bots to access or use the App without our written consent</li>
+    </ul>
+
+    <h2>5. Intellectual Property</h2>
+    <p>
+      The App, including all content, features, design, challenge packs, sounds, trademarks, and software, is owned by App Axis Lab or its licensors and is protected by copyright, trademark, and other intellectual property laws. This Agreement does not transfer any ownership rights to you.
+    </p>
+
+    <h2>6. Not Affiliated</h2>
+    <p>
+      All third-party names and trademarks belong to their owners. The App is independent and is not affiliated with, endorsed by or sponsored by them.
+    </p>
+
+    <h2>7. Entertainment Use, No Guarantee</h2>
+    <p>
+      The App is meant for fun and creativity. Reversed sound, filters and challenge answers are produced automatically and may not always sound or work as you expect. The App is not designed for professional audio work, and we do not guarantee the quality of any result.
+    </p>
+
+    <h2>8. Permissions &amp; Device Access</h2>
+    <p>
+      To record, the App needs the microphone permission. You grant it yourself and can withdraw it at any time in Android Settings. Use of permissions and exactly what is accessed is described in our <a href="#privacy">Privacy Policy</a>.
+    </p>
+
+    <h2>9. Third-Party Services &amp; Advertising</h2>
+    <p>
+      The App displays advertisements provided by Google AdMob, uses Google Firebase for analytics and crash reports, and uses Google Play for billing. These services are governed by their own terms and privacy policies. We are not responsible for third-party services, content, or practices.
+    </p>
+    <p>
+      Ad partners may collect device and usage data as described in our Privacy Policy. Your interactions with ads are subject to the applicable third-party terms.
+    </p>
+
+    <h2>10. Subscriptions &amp; In-App Purchases</h2>
+    <p>
+      If the App offers paid features, subscriptions, or in-app purchases (such as Premium), payment and billing are processed by Google Play. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period, and are managed and can be cancelled in Google Play, where Google Play&apos;s terms and refund policies apply. We do not store your full payment card details.
+    </p>
+
+    <h2>11. Disclaimer of Warranties</h2>
+    <p>
+      THE APP IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR FREE OF HARMFUL COMPONENTS.
+    </p>
+
+    <h2>12. Limitation of Liability</h2>
+    <p>
+      TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, APP AXIS LAB AND ITS AFFILIATES, OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA (INCLUDING LOST RECORDINGS), OR GOODWILL, ARISING OUT OF OR RELATED TO YOUR USE OF OR INABILITY TO USE THE APP, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+    </p>
+    <p>
+      OUR TOTAL LIABILITY FOR ANY CLAIM ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE APP SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID US FOR THE APP IN THE TWELVE (12) MONTHS BEFORE THE CLAIM, OR (B) FIFTY U.S. DOLLARS (USD $50), WHERE PERMITTED BY LAW.
+    </p>
+
+    <h2>13. Indemnification</h2>
+    <p>
+      You agree to indemnify and hold harmless App Axis Lab from any claims, damages, losses, liabilities, and expenses (including reasonable legal fees) arising from your content, your use of the App or your violation of this Agreement or applicable law.
+    </p>
+
+    <h2>14. Termination</h2>
+    <p>
+      This license is effective until terminated. We may suspend or terminate your access to the App at any time if you breach this Agreement. Upon termination, you must cease all use of the App and delete all copies from your devices. Sections that by their nature should survive termination will survive.
+    </p>
+
+    <h2>15. Changes to This Agreement</h2>
+    <p>
+      We may update this EULA from time to time. Continued use of the App after changes become effective constitutes acceptance of the revised Agreement. The &quot;EULA last updated&quot; date at the top of this page will reflect material revisions.
+    </p>
+
+    <h2>16. Governing Law &amp; Disputes</h2>
+    <p>
+      This Agreement is governed by the laws of the jurisdiction in which App Axis Lab operates, without regard to conflict-of-law principles, except where mandatory consumer protection laws in your country provide otherwise. Any dispute shall be resolved in the courts of that jurisdiction, unless applicable law requires a different forum.
+    </p>
+
+    <h2>17. Children</h2>
+    <p>
+      The App is not intended for children under 13 years of age unless permitted by applicable law and under parental supervision.
+    </p>
+
+    <h2>18. Google Play (Android)</h2>
+    <p>
+      If you obtained the App through Google Play, you agree that Google LLC is not a party to this Agreement and has no responsibility or liability with respect to the App. Your use of Google Play is subject to Google Play&apos;s terms of service.
+    </p>
+
+    <h2>19. Severability &amp; Entire Agreement</h2>
+    <p>
+      If any provision of this Agreement is held invalid or unenforceable, the remaining provisions remain in full force. This Agreement, together with our Privacy Policy, constitutes the entire agreement between you and App Axis Lab regarding the App and supersedes prior understandings on the same subject.
+    </p>
+
+    <h2>20. Contact</h2>
+    <p>
+      For questions about this EULA, contact App Axis Lab at <a href="mailto:support@appaxislab.com">support@appaxislab.com</a>.
+    </p>
+    </section>
+  
+        </div>
+      </div>
+    </PrivacyLayout>
+  )
+}

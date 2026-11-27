@@ -408,4 +408,16 @@ export const products: Product[] = [
     playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
     privacyPolicy: '/reelcounter_privacy',
   },
+  {
+    id: '34',
+    title: 'Reverse Singing & Voice Studio',
+    category: 'Entertainment',
+    filterCategory: 'apps',
+    desc: 'Record your voice or import a sound and play it backwards, then take on fun reverse challenges solo or with friends — everything runs on your device, with no account and no uploads.',
+    img: '/image/logo.png',
+    features: ['Record, Import & Play Backwards', 'Speed, Pitch & Voice Filters', 'Reverse Challenges & Party Mode', 'No Account, Recordings Stay on Device'],
+    tech: ['Kotlin', 'Android SDK', 'Firebase', 'AdMob'],
+    playstore: 'https://play.google.com/store/apps/developer?id=App+Axis+Lab',
+    privacyPolicy: '/reversevoice_privacy',
+  },
 ]
